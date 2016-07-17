@@ -1,4 +1,5 @@
-package com.EduardAliiev.utils.convertors;
+package com.EduardAliiev.utils.convertors.convertor;
+
 public class PrimitiveConvertor
 {
     float floatToChar = 101;
