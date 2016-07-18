@@ -8,13 +8,13 @@ public class EvenOrOdd {
 
         Scanner scanner = new
                 Scanner(System.in);
-        System.out.println("Enter any integer number");
+        System.out.println("\n" + "Enter any integer number");
         int n = scanner.nextInt();
 
         if (n % 2 == 0) {
-            System.out.println("Number is " + n + " even");
+            System.out.println("\n" + "Number is " + n + " even.");
         } else {
-            System.out.println("Number is " + n + " odd");
+            System.out.println("\n" + "Number is " + n + " odd.");
         }
     }
 }
