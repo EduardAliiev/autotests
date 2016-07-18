@@ -15,7 +15,7 @@ public class CircleRadius
         double radius2 = scanner.nextDouble();
 
         if (radius1 == radius2) {
-            System.out.println("Please try again and enter uneven values the radius:");
+            System.out.println("Please try again and enter uneven values the radius!");
         } else if (radius1 >= radius2) {
             double circleArea = PI * radius1 * radius1;
             System.out.println("Larger Area1 of a circle is equal to " + circleArea);

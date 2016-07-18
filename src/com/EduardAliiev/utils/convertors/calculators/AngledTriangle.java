@@ -19,6 +19,6 @@ public class AngledTriangle {
 
         if (C > A && C > B || A >= B && B >= A) {
             System.out.println("Side angled triangle equal C =" + C * C);
-            }
+        }
     }
 }
