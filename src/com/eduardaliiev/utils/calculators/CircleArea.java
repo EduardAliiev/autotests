@@ -1,5 +1,4 @@
 package com.eduardaliiev.utils.calculators;
-
 import java.util.Scanner;
 
 public class CircleArea {
@@ -8,8 +7,8 @@ public class CircleArea {
             Scanner scanner = new
                     Scanner(System.in);
             System.out.println("Enter the radius (r) r = ");
-            double radius = scanner.nextDouble();
-            System.out.println("\n" + "Entered number is = " + radius);
+            int radius = (int) scanner.nextDouble();
+            System.out.println("\n" + "Entered value of the radius = " + radius);
             double circleArea = PI * radius * radius;
             System.out.println("\n" + "Larger Area of a circle is equal to " + circleArea);
         }
