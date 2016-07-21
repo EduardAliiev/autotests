@@ -34,10 +34,12 @@ Thumbs.db
 
 ## Plugin-specific files:
 
+# Folders:
+/src/lessonworks/
+
 # IntelliJ
 /out/
 /.idea/
-/lessonworks/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
