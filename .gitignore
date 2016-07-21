@@ -37,6 +37,7 @@ Thumbs.db
 # IntelliJ
 /out/
 /.idea/
+/lessonworks/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
