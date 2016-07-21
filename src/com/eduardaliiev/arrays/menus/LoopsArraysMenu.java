@@ -11,40 +11,45 @@ import java.util.Scanner;
 public class LoopsArraysMenu {
     public static void runloop() {
         Scanner scanner = new Scanner(System.in);
-        //  int A = 5;
-        //while (A > 0) {
-        System.out.println("Welcome! Select one of the four programs is necessary to " +
-                "make next choice and Press Enter:" + "\n" +
-                "\n" + "1 - Even numbers from 2 to 20" + "\n" + "2 - Odd numbers from 1 to 99 and back" + "\n" + "3 - Array of random integer numbers from 0 to 9" +
-                "\n" + "4 - Array of random integer Max/Min numbers from 0 to 999" +
-                "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" + "\n" +
-                "\n" + "0 - Exit");
-        int numberOfChoice = (int) scanner.nextDouble();
-        switch (numberOfChoice) {
-            case 1:
-                EvenNumbersFrom2To20.calculateLoopNumbers();
-                break;
-            case 2:
-                OddNumbersFrom1To99AndBack.calculateLoopNumbers();
-                break;
-            case 3:
-                ArrayOfRandomIntegerNumbersFrom0To9.calculateLoopNumbers();
-                break;
-            case 4:
-                ArrayOfRandomIntegerMaxMinNumbersFrom0To999.calculateLoopNumbers();
-                break;
-            case 5:
-                TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
-                break;
-            case 0:
-                break;
-            default:
-                System.out.println("Starting program: " + numberOfChoice);
+        labelOfExit:
+        while (true) {
+            System.out.println("\n" + "Welcome! Select one of the four programs is necessary to " +
+                    "make next choice and Press Enter:" + "\n" +
+                    "\n" + "1 - Even numbers from 2 to 20" +
+                    "\n" + "2 - Odd numbers from 1 to 99 and back" +
+                    "\n" + "3 - Array of random integer numbers from 0 to 9" +
+                    "\n" + "4 - Array of random integer Max/Min numbers from 0 to 999" +
+                    "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" + "\n" +
+                    "\n" + "0 - Exit");
+            int numberOfChoice = (int) scanner.nextDouble();
+            switch (numberOfChoice) {
+                case 1:
+                    System.out.println("Starting program: " + "Even numbers from 2 to 20");
+                    EvenNumbersFrom2To20.calculateLoopNumbers();
+                    break;
+                case 2:
+                    System.out.println("Starting program: " + "Odd numbers from 1 to 99 and back");
+                    OddNumbersFrom1To99AndBack.calculateLoopNumbers();
+                    break;
+                case 3:
+                    System.out.println("Starting program: " + "Array of random integer numbers from 0 to 9");
+                    ArrayOfRandomIntegerNumbersFrom0To9.calculateLoopNumbers();
+                    break;
+                case 4:
+                    System.out.println("Starting program: " + "Array of random integer Max/Min numbers from 0 to 999");
+                    ArrayOfRandomIntegerMaxMinNumbersFrom0To999.calculateLoopNumbers();
+                    break;
+                case 5:
+                    System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 1 to 99");
+                    TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
+                    break;
+                case 0:
+                    System.out.println("Starting program: " + "Exit");
+                    break labelOfExit;
+                default:
+            }
+            System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
         }
-
-        System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
-
-        // A--;
     }
 }
 
