@@ -37,6 +37,8 @@ public class CalculateMenu {
                     System.out.println("Starting program: " + "Exit" + "\n" + "Good luck!!");
                     break labelOfExit;
                 default:
+                    System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    break;     //break labelOfExit;           // для выхода из цикла
             }
             System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
         }
