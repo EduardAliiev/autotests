@@ -9,7 +9,8 @@ import com.eduardaliiev.arrays.loops.TwoDimensionalArrayOfRandomIntegerNumbersFr
 import java.util.Scanner;
 
 public class LoopsArraysMenu {
-    public static void runloop() {
+    public static void runloop()
+            throws InterruptedException {         // задержка при выводе результата на 2,5 сек (2-3)
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
@@ -51,7 +52,9 @@ public class LoopsArraysMenu {
                     break;     //break labelOfExit;           // для выхода из цикла
             }
             System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
+        Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
         }
+
     }
 }
 
