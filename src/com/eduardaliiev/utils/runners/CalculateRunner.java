@@ -8,7 +8,8 @@ import com.eduardaliiev.utils.menus.CalculateMenu;
 
 public class CalculateRunner {
 
-        public static void main(String args[]) {
-            CalculateMenu.run();
-        }
+    public static void main(String args[])
+            throws InterruptedException {    // задержка при выводе результата на 2,5 сек (3-3)
+        CalculateMenu.run();
     }
+}

@@ -4,7 +4,8 @@ import com.eduardaliiev.utils.calculators.*;
 import java.util.Scanner;
 
 public class CalculateMenu {
-    public static void run() {
+    public static void run()
+            throws InterruptedException {         // задержка при выводе результата на 2,5 сек (2-3)
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
@@ -41,6 +42,7 @@ public class CalculateMenu {
                     break;     //break labelOfExit;           // для выхода из цикла
             }
             System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
+            Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
         }
     }
 }
