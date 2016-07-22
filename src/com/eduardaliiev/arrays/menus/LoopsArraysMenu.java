@@ -5,6 +5,8 @@ import com.eduardaliiev.arrays.loops.OddNumbersFrom1To99AndBack;
 import com.eduardaliiev.arrays.loops.ArrayOfRandomIntegerNumbersFrom0To9;
 import com.eduardaliiev.arrays.loops.ArrayOfRandomIntegerMaxMinNumbersFrom0To999;
 import com.eduardaliiev.arrays.loops.TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99;
+import com.eduardaliiev.arrays.loops.BubbleSort;
+
 
 import java.util.Scanner;
 
@@ -20,7 +22,8 @@ public class LoopsArraysMenu {
                     "\n" + "2 - Odd numbers from 1 to 99 and back" +
                     "\n" + "3 - Array of random integer numbers from 0 to 9" +
                     "\n" + "4 - Array of random integer Max/Min numbers from 0 to 999" +
-                    "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" + "\n" +
+                    "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" +
+                    "\n" + "6 - Bubble sotr from smaller to bigger and from bigger to smaller" + "\n" +
                     "\n" + "0 - Exit");
             int numberOfChoice = (int) scanner.nextDouble();
             switch (numberOfChoice) {
@@ -43,6 +46,10 @@ public class LoopsArraysMenu {
                 case 5:
                     System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 1 to 99");
                     TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
+                    break;
+                case 6:
+                    System.out.println("Starting program: " + "Bubble sotr from smaller to bigger and from bigger to smaller");
+                    BubbleSort.calculateLoopBubbleSort();
                     break;
                 case 0:
                     System.out.println("Starting program: " + "Exit");
