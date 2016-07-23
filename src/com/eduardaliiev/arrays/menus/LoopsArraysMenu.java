@@ -1,11 +1,6 @@
 package com.eduardaliiev.arrays.menus;
 
-import com.eduardaliiev.arrays.loops.EvenNumbersFrom2To20;
-import com.eduardaliiev.arrays.loops.OddNumbersFrom1To99AndBack;
-import com.eduardaliiev.arrays.loops.ArrayOfRandomIntegerNumbersFrom0To9;
-import com.eduardaliiev.arrays.loops.ArrayOfRandomIntegerMaxMinNumbersFrom0To999;
-import com.eduardaliiev.arrays.loops.TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99;
-import com.eduardaliiev.arrays.loops.BubbleSort;
+import com.eduardaliiev.arrays.loops.*;
 
 
 import java.util.Scanner;
@@ -23,7 +18,8 @@ public class LoopsArraysMenu {
                     "\n" + "3 - Array of random integer numbers from 0 to 9" +
                     "\n" + "4 - Array of random integer Max/Min numbers from 0 to 999" +
                     "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" +
-                    "\n" + "6 - Bubble sotr from smaller to bigger and from bigger to smaller" + "\n" +
+                    "\n" + "6 - Bubble sotr from smaller to bigger and from bigger to smaller" +
+                    "\n" + "7 - Via keyboard is entered 'Bubble sort from smaller to bigger' array" + "\n" +
                     "\n" + "0 - Exit");
             //int numberOfChoice = (int) scanner.nextDouble();
             int numberOfChoice;
@@ -52,8 +48,12 @@ public class LoopsArraysMenu {
                         TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
                         break;
                     case 6:
-                        System.out.println("Starting program: " + "Bubble sotr from smaller to bigger and from bigger to smaller");
+                        System.out.println("Starting program: " + "Bubble sort from smaller to bigger and from bigger to smaller");
                         BubbleSort.calculateLoopBubbleSort();
+                        break;
+                    case 7:
+                        System.out.println("Starting program: " + "Via keyboard is entered 'Bubble sort from smaller to bigger' array");
+                        BubbleSortEnteredKeyboardArray.calculateLoopBubbleSort();
                         break;
                     case 0:
                         System.out.println("Starting program: " + "Exit");
