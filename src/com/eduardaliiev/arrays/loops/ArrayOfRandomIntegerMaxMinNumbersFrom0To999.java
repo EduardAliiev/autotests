@@ -7,19 +7,24 @@ import java.util.Scanner;
 public class ArrayOfRandomIntegerMaxMinNumbersFrom0To999 {
     public static void calculateLoopNumbers() {
         Scanner scanner = new Scanner(System.in);
-        int[] arraysNumber = new int[15];
-        int min = arraysNumber[0];
-        int max = min;
-        for (int i = 0; i < arraysNumber.length; i++) {
+        int arraysNumber[] = new int[15];
+        int i = 0;
+        while (i < arraysNumber.length) {
             Random numbers = new Random();
             arraysNumber[i] = numbers.nextInt(999);
             System.out.print(arraysNumber[i] + " ");  // output of arrays line
-            if (min != 0 || arraysNumber[i] > min)
-                min = arraysNumber[i];
-            if (arraysNumber[i] > max)
-                max = arraysNumber[i];
+            i++;
         }
-        System.out.println("\n" + "Min number " + min + "\n" + "Max number " + max);
+        int min = arraysNumber[0];
+        int max = arraysNumber[0];
+        for (int anArraysNumber : arraysNumber) {
+            if (anArraysNumber < min)
+                min = anArraysNumber;
+            if (anArraysNumber > max)
+                max = anArraysNumber;
+        }
+        System.out.println("\n" + "==========================================================" +
+                "\n" + "Min number " + min + "\n" + "Max number " + max);
     }
 }
 
