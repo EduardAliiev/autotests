@@ -66,7 +66,7 @@ public class LoopsArraysMenu {
                 System.out.println("Sorry!! But you have entered isn't an integer number! Please try again.");
                 break;                              // без 'break' программа зацикливается
             }
-            System.out.println("\n" + "Oh-yeah!! Program has worked your choice! Good luck!!");
+            System.out.println("\n" + "Oh-yeah!! Program has processed your choice! Good luck!!");
             Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
         }
     }
