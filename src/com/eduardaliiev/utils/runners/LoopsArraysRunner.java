@@ -1,6 +1,6 @@
 package com.eduardaliiev.utils.runners;
 
-import com.eduardaliiev.arrays.menus.LoopsArraysMenu;
+import com.eduardaliiev.utils.menus.LoopsArraysMenu;
 
 public class LoopsArraysRunner {
     public static void main(String args[])

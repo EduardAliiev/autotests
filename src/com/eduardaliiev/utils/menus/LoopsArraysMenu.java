@@ -1,6 +1,6 @@
-package com.eduardaliiev.arrays.menus;
+package com.eduardaliiev.utils.menus;
 
-import com.eduardaliiev.arrays.loops.*;
+import com.eduardaliiev.utils.arrays.loops.*;
 
 
 import java.util.Scanner;

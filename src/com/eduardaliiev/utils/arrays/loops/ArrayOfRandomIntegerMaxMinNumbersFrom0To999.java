@@ -1,4 +1,4 @@
-package com.eduardaliiev.arrays.loops;
+package com.eduardaliiev.utils.arrays.loops;
 
 
 import java.util.Random;

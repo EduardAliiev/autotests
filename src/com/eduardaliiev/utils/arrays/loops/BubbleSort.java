@@ -1,27 +1,20 @@
-package com.eduardaliiev.arrays.loops;
+package com.eduardaliiev.utils.arrays.loops;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BubbleSortEnteredKeyboardArray {
 
+public class BubbleSort {
     public static void calculateLoopBubbleSort() {
         Scanner scanner = new Scanner(System.in);
         int j;
         boolean swapFlag = true;
         int tempInt;
-        System.out.print("Please, enter size of the array: ");
-
-        int size = scanner.nextInt();
-        int[] arraysNumber = new int[size];
-        for (int i = 0; i < size; i++) {
-            System.out.print("Element of the array: ");
-            arraysNumber[i] = scanner.nextInt();
-        }
+        int[] arraysNumber = {62, 84, 32, 5, 7, 14, 17, 55, 2, 13};
         System.out.print("\n" + "Original array:" + Arrays.toString(arraysNumber) + "\n ");
-        System.out.print("Sorted array: ");
 
         for (int i = 0; i < arraysNumber.length; i++) {
+
             while (swapFlag) {
                 swapFlag = false;
                 for (j = 0; j < arraysNumber.length - 1; j++) {
@@ -33,8 +26,14 @@ public class BubbleSortEnteredKeyboardArray {
                     }
                 }
             }
+            //  System.out.print("Sorted from smallest to bigger:");
             System.out.print(arraysNumber[i] + " ");
         }
+        System.out.println(" ");
+        for (int i = arraysNumber.length - 1; i >= 0; i--) {
+            // System.out.print("Sorted from bigger to smaller:");
+            System.out.print(arraysNumber[i] + " ");
+        }
+        System.out.println(" ");
     }
 }
-
