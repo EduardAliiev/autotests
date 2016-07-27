@@ -18,8 +18,9 @@ public class LoopsArraysMenu {
                     "\n" + "3 - Array of random integer numbers from 0 to 9" +
                     "\n" + "4 - Array of random integer Max/Min numbers from 0 to 999" +
                     "\n" + "5 - Two-dimensional array of random integer numbers from 1 to 99" +
-                    "\n" + "6 - Bubble sotr from smaller to bigger and from bigger to smaller" +
-                    "\n" + "7 - Via keyboard is entered 'Bubble sort from smaller to bigger' array" + "\n" +
+                    "\n" + "6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999" +
+                    "\n" + "7 - Bubble sotr from smaller to bigger and from bigger to smaller" +
+                    "\n" + "8 - Via keyboard is entered 'Bubble sort from smaller to bigger' array" + "\n" +
                     "\n" + "0 - Exit");
             //int numberOfChoice = (int) scanner.nextDouble();
             int numberOfChoice;
@@ -48,16 +49,22 @@ public class LoopsArraysMenu {
                         TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
                         break;
                     case 6:
+                        System.out.println("Starting program: " + "Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999");
+                        TwoArrayOfRandomNumberAlignedOnRightFram1To999.calculateLoopNumbers();
+                        break;
+                    case 7:
                         System.out.println("Starting program: " + "Bubble sort from smaller to bigger and from bigger to smaller");
                         BubbleSort.calculateLoopBubbleSort();
                         break;
-                    case 7:
+                    case 8:
                         System.out.println("Starting program: " + "Via keyboard is entered 'Bubble sort from smaller to bigger' array");
                         BubbleSortEnteredKeyboardArray.calculateLoopBubbleSort();
                         break;
+
                     case 0:
                         System.out.println("Starting program: " + "Exit");
-                        break labelOfExit;
+                        break
+                                labelOfExit;
                     default:
                         System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
                         break;     //break labelOfExit;           // для выхода из цикла
