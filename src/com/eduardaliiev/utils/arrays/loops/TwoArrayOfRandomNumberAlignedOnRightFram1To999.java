@@ -16,7 +16,7 @@ public class TwoArrayOfRandomNumberAlignedOnRightFram1To999 {
             for (int j = 0; j < arraysNumbers[i].length; j++) {
                 Random numbers = new Random();
                 arraysNumbers[i][j] = numbers.nextInt(999) + 1;
-                System.out.printf("%2d  ", arraysNumbers[i][j]);
+                System.out.printf("%3d  ", arraysNumbers[i][j]);
             }
             System.out.println();
         }

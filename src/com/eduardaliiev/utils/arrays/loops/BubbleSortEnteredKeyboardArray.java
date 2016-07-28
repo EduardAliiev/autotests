@@ -6,10 +6,14 @@ import java.util.Scanner;
 public class BubbleSortEnteredKeyboardArray {
 
     public static void calculateLoopBubbleSort() {
+
+       // final int BOLWEmenwe = 0;
+        //final  int menweBOLWE = 1;
+
         Scanner scanner = new Scanner(System.in);
         int j;
-        boolean swapFlag = true;
-        int tempInt;
+
+
         System.out.print("Please, enter size of the array: ");
 
         int size = scanner.nextInt();
@@ -18,23 +22,34 @@ public class BubbleSortEnteredKeyboardArray {
             System.out.print("Element of the array: ");
             arraysNumber[i] = scanner.nextInt();
         }
+        System.out.println("\n" + "0 - От меньшего к большему" +
+                "\n" + "1 - От большего к меньшему");
+
+     //   if (menweBOLWE == BOLWEmenwe) {
+       //     System.out.println("IF & ELSE: BubbleSort");
+       // } else if (BOLWEmenwe == menweBOLWE) {
+        //    System.out.println("IF & ELSE: BubbleSort");
+       // }
+
+
+        int numberOfExempls = (int) scanner.nextDouble();
+                switch (numberOfExempls) {
+            case 0:
+                System.out.println( "BB->MM");
+                BubbleSort.calculateLoopBubbleSort();
+                break;
+            case 1:
+                System.out.println("MM->BB");
+                BubbleSort.calculateLoopBubbleSort();
+                break;
+            default:
+                System.out.println("exitus");
+                break;
+        }
         System.out.print("\n" + "Original array:" + Arrays.toString(arraysNumber) + "\n ");
         System.out.print("Sorted array: ");
-
-        for (int i = 0; i < arraysNumber.length; i++) {
-            while (swapFlag) {
-                swapFlag = false;
-                for (j = 0; j < arraysNumber.length - 1; j++) {
-                    if (arraysNumber[j] > arraysNumber[j + 1]) {
-                        tempInt = arraysNumber[j + 1];
-                        arraysNumber[j + 1] = arraysNumber[j];
-                        arraysNumber[j] = tempInt;
-                        swapFlag = true;
-                    }
-                }
-            }
-            System.out.print(arraysNumber[i] + " ");
-        }
     }
 }
+
+
 

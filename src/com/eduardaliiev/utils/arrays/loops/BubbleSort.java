@@ -3,7 +3,6 @@ package com.eduardaliiev.utils.arrays.loops;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class BubbleSort {
     public static void calculateLoopBubbleSort() {
         Scanner scanner = new Scanner(System.in);
