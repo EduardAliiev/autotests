@@ -5,11 +5,10 @@ import com.eduardaliiev.utils.calculators.*;
 import java.util.Scanner;
 
 public class CalculateMenu {
-    public static void run()
-            throws InterruptedException {         // задержка при выводе результата на 2,5 сек (2-3)
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
-        labelOfExit:
-        while (true) {
+
+        labelOfExit: while (true) {
             System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                     "make next choice and Press Enter:\n" +
                     "\n 1 - Circle Area" +
@@ -24,7 +23,7 @@ public class CalculateMenu {
 
                 switch (numberOfChoice) {
                     case 0:
-                        System.out.println("Starting program: " + "Exit" + "\n" + "Good luck!!");
+                        System.out.println("Starting program: " + "Exit" + "\n Good luck!!");
                         break labelOfExit;
                     case 1:
                         System.out.println("Starting program: " + "Circle Area");
@@ -51,7 +50,11 @@ public class CalculateMenu {
                 break;                              // без 'break' программа зацикливается
             }
             System.out.println("\n Oh-yeah!! Program has processed your choice! Good luck!!");
-            Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
+            try {
+                Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

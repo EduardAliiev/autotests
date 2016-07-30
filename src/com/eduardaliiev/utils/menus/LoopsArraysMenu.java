@@ -6,11 +6,10 @@ import com.eduardaliiev.utils.arrays.loops.*;
 import java.util.Scanner;
 
 public class LoopsArraysMenu {
-    public static void runloop()
-            throws InterruptedException {         // задержка при выводе результата на 2,5 сек (2-3)
+    public static void runloop() {
         Scanner scanner = new Scanner(System.in);
-        labelOfExit:
-        while (true) {
+
+        labelOfExit: while (true) {
             System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                     "make next choice and Press Enter: \n" +
                     "\n 1 - Even numbers from 2 to 20" +
@@ -19,10 +18,9 @@ public class LoopsArraysMenu {
                     "\n 4 - Array of random integer Max/Min numbers from 0 to 999" +
                     "\n 5 - Two-dimensional array of random integer numbers from 1 to 99" +
                     "\n 6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999" +
-                    "\n 7 - Bubble sotr from smaller to bigger and from bigger to smaller \n" +
-/*
-                    "\n 8 - Via keyboard is entered 'Bubble sort from smaller to bigger' array \n" +
-*/
+                    "\n 7 - Bubble sotr from smaller to bigger and from bigger to smaller" +
+/*                    "\n 8 - Via keyboard is entered 'Bubble sort from smaller to bigger' array \n" +  */
+                    "\n 8 - Sort array by 'Selection sort' \n" +
                     "\n 0 - Exit");
             //int numberOfChoice = (int) scanner.nextDouble();
             int numberOfChoice;
@@ -66,16 +64,25 @@ public class LoopsArraysMenu {
                         System.out.println("Starting program: " + "Via keyboard is entered 'Bubble sort from smaller to bigger' array");
                         BubbleSortEnteredKeyboardArray.calculateLoopBubbleSort();
                         break;*/
+                    case 8:
+                        System.out.println("Starting program: " + "Sort array by 'Selection sort'");
+                        SelectionSortArray.calculateLoopBubbleSort();
+                        break;
+
                     default:
                         System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
-                        break;     //break labelOfExit;           // для выхода из цикла
+                        break;           //break labelOfExit;           // для выхода из цикла
                 }
             } else {
                 System.out.println("Sorry!! But you have entered isn't an integer number! Please try again.");
                 break;                              // без 'break' программа зацикливается
             }
             System.out.println("\n Oh-yeah!! Program has processed your choice! Good luck!!");
-            Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
+            try {
+                Thread.sleep(2500);              // вариант от идэешки)) задержка при выводе результата на 2,5 сек
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
