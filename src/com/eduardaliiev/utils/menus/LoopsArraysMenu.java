@@ -7,9 +7,18 @@ import java.util.Scanner;
 
 public class LoopsArraysMenu {
     public static void runloop() {
+<<<<<<< Updated upstream
         Scanner scanner = new Scanner(System.in);
 
         labelOfExit: while (true) {
+=======
+        // throws InterruptedException {         // задержка при выводе результата на 2,5 сек (2-3)
+        Scanner scanner = new Scanner(System.in);
+         //labelOfExit:
+        //int i = 4;
+        while (true) {
+            //if (i == 0) break;
+>>>>>>> Stashed changes
             System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                     "make next choice and Press Enter: \n" +
                     "\n 1 - Even numbers from 2 to 20" +
@@ -30,7 +39,8 @@ public class LoopsArraysMenu {
                 switch (numberOfChoice) {
                     case 0:
                         System.out.println("Starting program: " + "Exit");
-                        break labelOfExit;
+                        break;
+                   // labelOfExit;
 
                     case 1:
                         System.out.println("Starting program: " + "Even numbers from 2 to 20");
@@ -78,11 +88,16 @@ public class LoopsArraysMenu {
                 break;                              // без 'break' программа зацикливается
             }
             System.out.println("\n Oh-yeah!! Program has processed your choice! Good luck!!");
+<<<<<<< Updated upstream
             try {
                 Thread.sleep(2500);              // вариант от идэешки)) задержка при выводе результата на 2,5 сек
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+=======
+            //Thread.sleep(2500);         // задержка при выводе результата на 2,5 сек (1-3)
+      // i--;
+>>>>>>> Stashed changes
         }
     }
 }
