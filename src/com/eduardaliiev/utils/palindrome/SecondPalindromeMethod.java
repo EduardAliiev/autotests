@@ -11,16 +11,16 @@ public class SecondPalindromeMethod {
 
         boolean isPalindrome = true;
 
-        isPalindrome = palindromeOne;
+        // isPalindrome = palindromeOne;
 
-        if (palindromeOne.equals(isPalindrome);
+ /*       if (palindromeOne.equals(isPalindrome);
 
 
 
-       /* for (int i = 0; i < palindromeOne.length() / 2; i++) {
+       *//* for (int i = 0; i < palindromeOne.length() / 2; i++) {
             isPalindrome = isPalindrome &&
                     (palindromeOne.charAt(i) >= palindromeOne.charAt
-                            (palindromeOne.length() - i - 1));*/
+                            (palindromeOne.length() - i - 1));*//*
              if (isPalindrome)
             System.out.println("PalindromeOne - " + isPalindrome);
 
@@ -28,4 +28,5 @@ public class SecondPalindromeMethod {
         System.out.println("Not palindromeOne - " + isPalindrome);
 
     }
-}
+}*/
+    }}
