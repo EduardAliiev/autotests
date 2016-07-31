@@ -73,7 +73,7 @@ public class LoopsArraysMenu {
 
                         case 8:
                             System.out.println("Starting program: " + "Sort array by 'Selection sort'");
-                            SelectionSortArray.calculateLoopBubbleSort();
+                            SelectionSortArray.calculateLoopNumbers();
                             break;
                         case 9:
                             System.out.println("Starting program: " + "The two-dimensional array with a maximum output of a random number from -99 to 99");
