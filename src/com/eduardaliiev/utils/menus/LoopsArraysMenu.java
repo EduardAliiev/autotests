@@ -20,7 +20,9 @@ public class LoopsArraysMenu {
                     "\n 6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999" +
                     "\n 7 - Bubble sotr from smaller to bigger and from bigger to smaller" +
 /*                    "\n 8 - Via keyboard is entered 'Bubble sort from smaller to bigger' array \n" +  */
-                    "\n 8 - Sort array by 'Selection sort' \n" +
+                    "\n 8 - Sort array by 'Selection sort'" +
+                    "\n 9 - The two-dimensional array with a maximum output of a random number from -99 to 99 \n" +
+
                     "\n 0 - Exit");
             //int numberOfChoice = (int) scanner.nextDouble();
             int numberOfChoice;
@@ -50,11 +52,11 @@ public class LoopsArraysMenu {
                         break;
                     case 5:
                         System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 1 to 99");
-                        TwoDimensionalArrayOfRandomIntegerNumbersFrom1To99.calculateLoopNumbers();
+                        TwoDimensionalArrayOfRandomIntegerNumbersFrom10To99.calculateLoopNumbers();
                         break;
                     case 6:
                         System.out.println("Starting program: " + "Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999");
-                        TwoArrayOfRandomNumberAlignedOnRightFram1To999.calculateLoopNumbers();
+                        TwoArrayOfRandomNumberAlignedOnRightFrom1To999.calculateLoopNumbers();
                         break;
                     case 7:
                         System.out.println("Starting program: " + "Bubble sort from smaller to bigger and from bigger to smaller");
@@ -67,6 +69,10 @@ public class LoopsArraysMenu {
                     case 8:
                         System.out.println("Starting program: " + "Sort array by 'Selection sort'");
                         SelectionSortArray.calculateLoopBubbleSort();
+                        break;
+                    case 9:
+                        System.out.println("Starting program: " + "The two-dimensional array with a maximum output of a random number from -99 to 99");
+                        TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99.calculateLoopNumbers();
                         break;
 
                     default:
