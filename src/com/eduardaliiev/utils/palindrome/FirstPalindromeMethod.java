@@ -4,24 +4,26 @@ import java.util.Scanner;
 
 public class FirstPalindromeMethod {
 
-    public static void runPalindrome() {
+    public static boolean runPalindrome() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please, enter first Palindrome words - ");
+        System.out.print("Please, enter Palindrome word - ");
         String palindromeOne = scanner.nextLine();
-/*
-        if (palindromeOne.equalsIgnoreCase(palindromeOne)) { }
-*/
+        System.out.println("Palindrome word is \"" + palindromeOne + "\"");
+
         boolean isPalindrome = true;
 
         for (int i = 0; i < palindromeOne.length() / 2; i++) {
             isPalindrome = isPalindrome &&
-                    (palindromeOne.charAt(i) == palindromeOne.charAt
-                            (palindromeOne.length() - i - 1));
-            if (isPalindrome)
-                System.out.println("PalindromeOne - " + isPalindrome);
-            else
-                System.out.println("Not palindromeOne - " + isPalindrome);
+                    (palindromeOne.toLowerCase().charAt(i) == palindromeOne.toLowerCase().charAt
+                            (palindromeOne.length() - i -1));
+            if (isPalindrome) {
+                System.out.println("It's Palindrome - " + isPalindrome);
+                return true;
+            } else
+                System.out.println("Not a palindrome - " + isPalindrome);
+            return false;
         }
+        return isPalindrome;
     }
 }
