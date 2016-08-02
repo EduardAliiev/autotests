@@ -7,7 +7,7 @@ public class FirstPalindromeMethod {
     public static boolean runPalindrome() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please, enter Palindrome word - ");
+        System.out.print("Please, enter the word for checking: ");
         String palindromeOne = scanner.nextLine();
         System.out.println("Palindrome word is \"" + palindromeOne + "\"");
 

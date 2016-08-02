@@ -9,10 +9,10 @@ public class PalindromeMenu {
         Scanner scanner = new Scanner(System.in);
 
         labelOfExit: while (true) {
-            System.out.println("\n Welcome! Select one of the four programs is necessary to " +
-                    "make next choice and Press Enter:\n" +
+            System.out.println("\n Welcome! Select one of the three programs is necessary to make next choice and Press Enter:\n" +
                     "\n 1 - The first method of to calculate Palindrome" +
-                    "\n 2 - The second method of to calculate Palindrome\n" +
+                    "\n 2 - The second method of to calculate Palindrome" +
+                    "\n 3 - The third method of to calculate Palindrome\n" +
                     "\n 0 - Exit");
             int numberOfChoice;
             if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
@@ -27,8 +27,12 @@ public class PalindromeMenu {
                         FirstPalindromeMethod.runPalindrome();
                         break;
                     case 2:
-                        System.out.println("Starting program: " + "The first method of to calculate Palindrome");
+                        System.out.println("Starting program: " + "The second method of to calculate Palindrome");
                         SecondPalindromeMethod.runPalindrome();
+                        break;
+                    case 3:
+                        System.out.println("Starting program: " + "The third method of to calculate Palindrome");
+                        ThirdPalindromeMethod.runPalindrome();
                         break;
 
                     default:
