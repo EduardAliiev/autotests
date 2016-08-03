@@ -17,7 +17,7 @@ public class ArrayOfRandomIntegerMaxMinNumbersFrom0To999 {
         }
         int min = arraysNumber[0];
         int max = arraysNumber[0];
-        for (int anArraysNumber : arraysNumber) {
+        for (int anArraysNumber : arraysNumber) {         // forEach
             if (anArraysNumber < min)
                 min = anArraysNumber;
             if (anArraysNumber > max)
