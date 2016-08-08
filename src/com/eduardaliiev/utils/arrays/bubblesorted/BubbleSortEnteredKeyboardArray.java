@@ -1,4 +1,4 @@
-package com.eduardaliiev.utils.arrays.loops;
+package com.eduardaliiev.utils.arrays.bubblesorted;
 
 import java.util.Arrays;
 import java.util.Scanner;

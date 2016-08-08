@@ -1,4 +1,4 @@
-package com.eduardaliiev.utils.palindrome;
+package com.eduardaliiev.utils.arrays.palindrome;
 
 import java.util.Scanner;
 
