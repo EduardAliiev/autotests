@@ -1,6 +1,6 @@
 package com.eduardaliiev.utils.menus;
 
-import com.eduardaliiev.utils.palindrome.*;
+import com.eduardaliiev.utils.arrays.palindrome.*;
 
 import java.util.Scanner;
 

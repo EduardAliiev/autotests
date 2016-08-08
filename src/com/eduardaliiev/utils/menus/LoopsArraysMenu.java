@@ -1,5 +1,6 @@
 package com.eduardaliiev.utils.menus;
 
+import com.eduardaliiev.utils.arrays.bubblesorted.BubbleSort;
 import com.eduardaliiev.utils.arrays.loops.*;
 
 
@@ -25,7 +26,8 @@ public class LoopsArraysMenu {
 /*                    "\n 8 - Via keyboard is entered 'Bubble sort from smaller to bigger' array \n" +  */
 
                         "\n 8 - Sort array by 'Selection sort'" +
-                        "\n 9 - The two-dimensional array with a maximum output of a random number from -99 to 99 \n" +
+                        "\n 9 - The two-dimensional array with a maximum output of a random number from -99 to 99" +
+                        "\n 10 - Set of sort numbers from smaller to bigger and from bigger to smaller \n" +
 
                         "\n 0 - Exit");
                 int numberOfChoice;
@@ -78,6 +80,10 @@ public class LoopsArraysMenu {
                         case 9:
                             System.out.println("Starting program: " + "The two-dimensional array with a maximum output of a random number from -99 to 99");
                             TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99.calculateLoopNumbers();
+                            break;
+                        case 10:
+                            System.out.println("Starting program: " + "Set of sort numbers from smaller to bigger and from bigger to smaller");
+                            SetOfNumbers.calculateLoopNumbers();
                             break;
 
                         default:

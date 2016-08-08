@@ -1,8 +1,10 @@
 package com.eduardaliiev.utils.arrays.utils;
 
+import java.util.Arrays;
+
 public class TempSortedNumbersSmallToBig {
 
-    public int[] tempSortSmallToBig(int[] arraysNumber) {
+    public void tempSortSmallToBig(int[] arraysNumber) {
         boolean swapFlag = true;
         int tempInt;
         int i;
@@ -18,8 +20,10 @@ public class TempSortedNumbersSmallToBig {
             }
         }
         for (i = 0; i < arraysNumber.length; i++) {
-            System.out.print(arraysNumber[i] + " ");
+            arraysNumber[i] = Integer.valueOf(arraysNumber[i]);
         }
-        return arraysNumber;
+            System.out.print(Arrays.toString(arraysNumber));
+
+//        return arraysNumber;
     }
 }
