@@ -1,8 +1,8 @@
-package com.eduardaliiev.utils.arrays.loops;
+package com.eduardaliiev.utils.arrays.stringbuildersarray;
 
-import com.eduardaliiev.utils.arrays.utils.InputNumbersOfKeyboard;
-import com.eduardaliiev.utils.arrays.utils.TempSortedNumbersBigToSmall;
-import com.eduardaliiev.utils.arrays.utils.TempSortedNumbersSmallToBig;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.InputNumbersOfKeyboard;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersBigToSmall;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersSmallToBig;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
 package com.eduardaliiev.utils.arrays.bubblesorted;
 
-import com.eduardaliiev.utils.arrays.utils.TempSortedNumbersBigToSmall;
-import com.eduardaliiev.utils.arrays.utils.TempSortedNumbersSmallToBig;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersBigToSmall;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersSmallToBig;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package com.eduardaliiev.utils.arrays.utils;
+package com.eduardaliiev.utils.arrays.utils.actionswitharray;
 
 import java.util.Arrays;
 import java.util.Scanner;

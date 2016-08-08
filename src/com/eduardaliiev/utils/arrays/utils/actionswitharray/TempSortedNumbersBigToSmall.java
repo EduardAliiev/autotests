@@ -1,10 +1,8 @@
-package com.eduardaliiev.utils.arrays.utils;
+package com.eduardaliiev.utils.arrays.utils.actionswitharray;
 
-import java.util.Arrays;
+public class TempSortedNumbersBigToSmall {
 
-public class TempSortedNumbersSmallToBig {
-
-    public void tempSortSmallToBig(int[] arraysNumber) {
+    public void tempSortBigToSmall(int[] arraysNumber) {
         boolean swapFlag = true;
         int tempInt;
         int i;
@@ -19,11 +17,12 @@ public class TempSortedNumbersSmallToBig {
                 }
             }
         }
-        for (i = 0; i < arraysNumber.length; i++) {
-            arraysNumber[i] = Integer.valueOf(arraysNumber[i]);
-        }
-            System.out.print(Arrays.toString(arraysNumber));
+        System.out.print("[ ");
 
-//        return arraysNumber;
+        for (i = arraysNumber.length - 1; i >= 0; i--) {
+            System.out.print(arraysNumber[i] + " ");
+        }
+        System.out.print("]");
+       // return arraysNumber;
     }
 }
