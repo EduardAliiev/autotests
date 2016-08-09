@@ -1,5 +1,9 @@
 package com.eduardaliiev.utils.menus;
 
+import com.eduardaliiev.utils.arrays.stringbuildersarray.ArrayOfCharDataWithDelimiter;
+import com.eduardaliiev.utils.arrays.stringbuildersarray.SetOfNumbers;
+import com.eduardaliiev.utils.arrays.stringbuildersarray.StringKeyWord;
+
 import java.util.Scanner;
 
 public class StringBuildersMenu {
@@ -11,25 +15,29 @@ public class StringBuildersMenu {
             while (true) {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-
-//                        "\n 10 - Set of sort numbers from smaller to bigger and from bigger to smaller \n" +
-
+                        "\n 1 - Set of sort numbers from smaller to bigger and from bigger to smaller" +
+                        "\n 2 - Enter the value of the array through the delimiter " +
+                        "\n 3 - Enter a string and specify the keyword\n" +
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
                     numberOfChoice = scanner.nextInt();
-
                     switch (numberOfChoice) {
                         case 0:
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
-
-                       /* case 1:
-                            System.out.println("Starting program: " + "Even numbers from 2 to 20");
-                            EvenNumbersFrom2To20.calculateLoopNumbers();
-                            break;*/
-
-
+                        case 1:
+                            System.out.println("Starting program: " + "Set of sort numbers from smaller to bigger and from bigger to smaller");
+                            SetOfNumbers.calculateLoopNumbers();
+                            break;
+                        case 2:
+                            System.out.println("Starting program: " + "Enter the value of the array through the delimiter \";\"");
+                            ArrayOfCharDataWithDelimiter.stringBuilders();
+                            break;
+                        case 3:
+                            System.out.println("Starting program: " + "Enter a string and specify the keyword");
+                            StringKeyWord.stringBuilders();
+                            break;
                         default:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
                             break;           //break labelOfExit;           // для выхода из цикла
