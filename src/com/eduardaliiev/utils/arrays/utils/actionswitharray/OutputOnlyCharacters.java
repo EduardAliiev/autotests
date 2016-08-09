@@ -1,7 +1,15 @@
 package com.eduardaliiev.utils.arrays.utils.actionswitharray;
 
-/**
- * Created by edikaliiev on 8/9/16.
- */
+
 public class OutputOnlyCharacters {
+
+    private static String outputOnlyCharacters(String inputString) {
+        StringBuilder onlyChar = new StringBuilder();
+        for (int i = 0; i < inputString.length(); i++) {
+            if (Character.isLetter(inputString.charAt(i)))               // вывод только букв (isLetter)
+                onlyChar.append(inputString.charAt(i));
+        }
+        // System.out.println("Entered values: ->" + onlyChar);
+        return onlyChar.toString();
+    }
 }

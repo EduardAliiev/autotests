@@ -7,7 +7,7 @@ public class ArrayOfRandomIntegerNumbersFrom0To9 {
     public static void calculateLoopNumbers() {
         Scanner scanner = new Scanner(System.in);
         int evenNumbers = 0;
-        int[] arraysNumber = new int[5];
+        int[] arraysNumber = new int[15];
         for (int i = 0; i < arraysNumber.length; i++) {
             Random numbers = new Random();
             arraysNumber[i] = numbers.nextInt(10);
