@@ -18,7 +18,7 @@ public class LoopsArraysMenu {
                         "\n 2 - Odd numbers from 1 to 99 and back" +
                         "\n 3 - Array of random integer numbers from 0 to 9" +
                         "\n 4 - Array of random integer Max/Min numbers from 0 to 999" +
-                        "\n 5 - Two-dimensional array of random integer numbers from 1 to 99" +
+                        "\n 5 - Two-dimensional array of random integer numbers from 10 to 99" +
                         "\n 6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999" +
                         "\n 7 - Bubble sotr from smaller to bigger and from bigger to smaller" +
 
@@ -54,7 +54,7 @@ public class LoopsArraysMenu {
                             ArrayOfRandomIntegerMaxMinNumbersFrom0To999.calculateLoopNumbers();
                             break;
                         case 5:
-                            System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 1 to 99");
+                            System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 10 to 99");
                             TwoDimensionalArrayOfRandomIntegerNumbersFrom10To99.calculateLoopNumbers();
                             break;
                         case 6:

@@ -1,6 +1,7 @@
 package com.eduardaliiev.utils.arrays.loops;
 
-import java.util.Random;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.RandomCalculateNumbers;
+
 import java.util.Scanner;
 
 public class TwoArrayOfRandomNumberAlignedOnRightFrom1To999 {
@@ -11,14 +12,7 @@ public class TwoArrayOfRandomNumberAlignedOnRightFrom1To999 {
         for (int i = 0; i < arraysNumbers.length; i++) {
             arraysNumbers[i] = new int[5];
         }
-        for (int i = 0; i < arraysNumbers.length; i++) {
-            // System.out.println();
-            for (int j = 0; j < arraysNumbers[i].length; j++) {
-                Random numbers = new Random();
-                arraysNumbers[i][j] = numbers.nextInt(999) + 1;
-                System.out.printf("%3d  ", arraysNumbers[i][j]);
-            }
-            System.out.println();
-        }
+        RandomCalculateNumbers randomCalculateNumbers = new RandomCalculateNumbers();
+        randomCalculateNumbers.randomCalculate(arraysNumbers);
     }
 }
