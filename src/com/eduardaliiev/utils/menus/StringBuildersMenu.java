@@ -3,6 +3,7 @@ package com.eduardaliiev.utils.menus;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.ArrayOfCharDataWithDelimiter;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.SetOfNumbers;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.StringKeyWord;
+import com.eduardaliiev.utils.arrays.enigma.InputMethodeEnigma;
 
 import java.util.Scanner;
 
@@ -17,7 +18,8 @@ public class StringBuildersMenu {
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Set of sort numbers from smaller to bigger and from bigger to smaller" +
                         "\n 2 - Enter the value of the array through the delimiter " +
-                        "\n 3 - Enter a string and specify the keyword\n" +
+                        "\n 3 - Enter a string and specify the keyword" +
+                        "\n 4 - Enigma\n" +
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
@@ -37,6 +39,10 @@ public class StringBuildersMenu {
                         case 3:
                             System.out.println("Starting program: " + "Enter a string and specify the keyword");
                             StringKeyWord.stringBuilders();
+                            break;
+                        case 4:
+                            System.out.println("Starting program: " + "Enigma");
+                            InputMethodeEnigma.inputMethodeEnigma();
                             break;
                         default:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
