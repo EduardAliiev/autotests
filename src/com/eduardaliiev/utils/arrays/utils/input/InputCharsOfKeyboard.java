@@ -1,4 +1,4 @@
-package com.eduardaliiev.utils.arrays.utils.actionsinput;
+package com.eduardaliiev.utils.arrays.utils.input;
 
 import java.util.Scanner;
 

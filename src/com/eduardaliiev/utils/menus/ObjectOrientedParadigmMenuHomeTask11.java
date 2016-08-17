@@ -1,7 +1,7 @@
 package com.eduardaliiev.utils.menus;
 
-import com.eduardaliiev.utils.arrays.objectorientedparadigm.InputDataCompany;
-import com.eduardaliiev.utils.arrays.objectorientedparadigm.InputDataHuman;
+import com.eduardaliiev.utils.arrays.utils.input.InputDataCompany;
+import com.eduardaliiev.utils.arrays.utils.input.InputDataHuman;
 
 import java.util.Scanner;
 

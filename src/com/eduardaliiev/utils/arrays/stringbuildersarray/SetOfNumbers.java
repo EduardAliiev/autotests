@@ -1,6 +1,6 @@
 package com.eduardaliiev.utils.arrays.stringbuildersarray;
 
-import com.eduardaliiev.utils.arrays.utils.actionsinput.InputNumbersOfKeyboard;
+import com.eduardaliiev.utils.arrays.utils.input.InputNumbersOfKeyboard;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersBigToSmall;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersSmallToBig;
 

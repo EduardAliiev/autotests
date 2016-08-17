@@ -1,4 +1,6 @@
-package com.eduardaliiev.utils.arrays.objectorientedparadigm;
+package com.eduardaliiev.utils.arrays.utils.input;
+
+import com.eduardaliiev.utils.arrays.objectorientedparadigm.WhiteCollar;
 
 import java.util.Scanner;
 

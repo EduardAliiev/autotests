@@ -1,4 +1,4 @@
-package com.eduardaliiev.utils.arrays.utils.actionsoutput;
+package com.eduardaliiev.utils.arrays.utils.output;
 
 
 public class OutputOnlyCharacters {
