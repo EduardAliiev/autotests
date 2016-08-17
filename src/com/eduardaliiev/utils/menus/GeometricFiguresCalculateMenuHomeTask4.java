@@ -4,7 +4,7 @@ import com.eduardaliiev.utils.calculators.*;
 
 import java.util.Scanner;
 
-public class CalculateMenu {
+public class GeometricFiguresCalculateMenuHomeTask4 {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
 

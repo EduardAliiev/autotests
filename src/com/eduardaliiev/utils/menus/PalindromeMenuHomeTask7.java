@@ -4,7 +4,7 @@ import com.eduardaliiev.utils.arrays.palindrome.*;
 
 import java.util.Scanner;
 
-public class PalindromeMenu {
+public class PalindromeMenuHomeTask7 {
     public static void runPalindrome() {
         Scanner scanner = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 package com.eduardaliiev.utils.arrays.stringbuildersarray;
 
-import com.eduardaliiev.utils.arrays.utils.actionswitharray.InputCharsOfKeyboard;
+import com.eduardaliiev.utils.arrays.utils.actionsinput.InputCharsOfKeyboard;
 
 public class ArrayOfCharDataWithDelimiter {
 
