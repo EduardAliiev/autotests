@@ -3,7 +3,7 @@ package com.eduardaliiev.utils.menus;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.ArrayOfCharDataWithDelimiter;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.SetOfNumbers;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.StringKeyWord;
-import com.eduardaliiev.utils.arrays.enigma.InputMethodeEnigma;
+import com.eduardaliiev.utils.arrays.utils.input.InputMethodeEnigma;
 
 import java.util.Scanner;
 
