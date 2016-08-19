@@ -10,12 +10,12 @@ public class InputDataHuman {
         Scanner scanner = new Scanner(System.in);
 
         Human human = new Human();
-        System.out.print("Please, enter name human ");
+        System.out.print("\nPlease, enter name human: ");
         String nameHuman = scanner.nextLine();
         human.setName(nameHuman);
-        System.out.println("Human name is " + human.getName());
+        System.out.println("Human name is " + human.getName() + "!");
 
-        System.out.print("Please, enter age human ");
+        System.out.print("\nPlease, enter age human ");
         String ageHuman = scanner.nextLine();
         Integer ageNumber = Integer.valueOf(ageHuman);              // введенное значение 'String' переводим в 'int'
         human.setAge(ageNumber);

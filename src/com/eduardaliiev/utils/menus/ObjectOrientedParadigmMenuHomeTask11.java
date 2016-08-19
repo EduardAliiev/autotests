@@ -1,6 +1,6 @@
 package com.eduardaliiev.utils.menus;
 
-import com.eduardaliiev.utils.arrays.utils.input.InputDataCompany;
+import com.eduardaliiev.utils.arrays.utils.input.InputDataWhiteCollar;
 import com.eduardaliiev.utils.arrays.utils.input.InputDataHuman;
 
 import java.util.Scanner;
@@ -31,7 +31,7 @@ public class ObjectOrientedParadigmMenuHomeTask11 {
                             break;
                         case 2:
                             System.out.println("Starting program: " + "Enter name of the company");
-                            InputDataCompany.inputData();
+                            InputDataWhiteCollar.inputData();
                             break;
                         default:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
