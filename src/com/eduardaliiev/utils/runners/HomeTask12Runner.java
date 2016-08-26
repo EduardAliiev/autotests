@@ -1,9 +1,9 @@
 package com.eduardaliiev.utils.runners;
 
-import com.eduardaliiev.utils.menus.ObjectOrientedParadigmMenuHomeTask11;
+import com.eduardaliiev.utils.menus.ObjectOrientedParadigmMenuHomeTask12;
 
-public class HomeTask11Runner {
+public class HomeTask12Runner {
     public static void main(String args[]) {
-        ObjectOrientedParadigmMenuHomeTask11.runnerObjectOrientedParadigm();
+        ObjectOrientedParadigmMenuHomeTask12.runnerObjectOrientedParadigm();
     }
 }

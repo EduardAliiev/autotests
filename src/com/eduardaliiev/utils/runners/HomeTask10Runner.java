@@ -1,12 +1,13 @@
-package lessonworks.recordreadingfile.Two;
+package com.eduardaliiev.utils.runners;
+
+import com.eduardaliiev.utils.menus.ReaderAndWriterMenuHomeTask10;
 
 import java.io.IOException;
 
-public class ReadWriteRunner {
+public class HomeTask10Runner {
 
     public static void main(String args[]) throws IOException {
-
-        ReadAndWreatMenu.runnerReaderWreater();
+        ReaderAndWriterMenuHomeTask10.runnerReaderWreater();
     }
 }
 
