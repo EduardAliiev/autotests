@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class CircleRadius {
     public static void calculateBigger() {
         final double PI = 3.14d;
-            double radius1 = 0;
-            double radius2 = 0;
+        double radius1 = 0;
+        double radius2 = 0;
         Scanner scanner = new Scanner(System.in);
         do{
             System.out.println("\n" + "Enter the radius_1 (r1) of the circle r1 = ");
