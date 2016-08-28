@@ -8,7 +8,8 @@ public class GeometricFiguresCalculateMenuHomeTask4 {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
 
-        labelOfExit: while (true) {
+        labelOfExit:
+        while (true) {
             System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                     "make next choice and Press Enter:\n" +
                     "\n 1 - Circle Area" +
@@ -16,7 +17,6 @@ public class GeometricFiguresCalculateMenuHomeTask4 {
                     "\n 3 - Right Angled Triangle" +
                     "\n 4 - Numbers Is Even Or Odd\n" +
                     "\n 0 - Exit");
-            //int numberOfChoice = (int) scanner.nextDouble();
             int numberOfChoice;
             if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
                 numberOfChoice = scanner.nextInt();

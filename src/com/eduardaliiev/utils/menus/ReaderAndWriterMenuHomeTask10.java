@@ -1,4 +1,8 @@
-package lessonworks.recordreadingfile.Two;
+package com.eduardaliiev.utils.menus;
+
+import com.eduardaliiev.utils.arrays.readerandwriterfile.EnterWordsAndExit;
+import com.eduardaliiev.utils.arrays.readerandwriterfile.PolindromeReadToWrite;
+import com.eduardaliiev.utils.arrays.utils.output.WriteToFileOnlyNumbers;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -6,13 +10,16 @@ import java.util.Scanner;
 public class ReaderAndWriterMenuHomeTask10 {
     public static void runnerReaderWreater() throws IOException {
         Scanner scanner = new Scanner(System.in);
-
         labelOfExit:
         while (true) {
             while (true) {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-                        "\n 1 - Reading numbers and sort from smaller to bigger and from bigger to smaller" +
+                        "\n 1 - Reading numbers and sort from smaller to bigger" +
+                        "\n 2 - Verifying the words on the \'polymorphism\'" +
+                        "\n 3 - Create a new file, fill it up and enter verification word: \'exit\'\n" +
+
+
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
@@ -22,12 +29,16 @@ public class ReaderAndWriterMenuHomeTask10 {
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
                         case 1:
-                            ReadFromFile readFromFile = new ReadFromFile();
-                            System.out.println("Starting program: " + "Reading numbers and sort from smaller to bigger and from bigger to smaller \";\"");
-                            readFromFile.readFromFile(ReadFromFile.getInputPath());
-                            WriteToFile writeToFile = new WriteToFile();
-                            writeToFile.writeToFile(WriteToFile.getOutputPath());
-
+                            System.out.println("Starting program: " + "Reading numbers and sort from smaller to bigger");
+                            WriteToFileOnlyNumbers.writeToFile(WriteToFileOnlyNumbers.getOutputPath());
+                            break;
+                        case 2:
+                            System.out.println("Starting program: " + "Verifying the words on the \'polymorphism\'");
+                            PolindromeReadToWrite.readFromFile();
+                            break;
+                        case 3:
+                            System.out.println("Starting program: " + "Create a new file, fill it up and enter verification word: \'exit\'");
+                            EnterWordsAndExit.createFileAndWrite();
                             break;
                         default:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");

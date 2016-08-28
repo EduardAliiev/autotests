@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class ObjectOrientedParadigmMenuHomeTask11 {
     public static void runnerObjectOrientedParadigm() {
         Scanner scanner = new Scanner(System.in);
-
         labelOfExit:
         while (true) {
             while (true) {
@@ -16,7 +15,6 @@ public class ObjectOrientedParadigmMenuHomeTask11 {
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Enter the name  and the age of human" +
                         "\n 2 - Enter name of the company\n" +
-
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число

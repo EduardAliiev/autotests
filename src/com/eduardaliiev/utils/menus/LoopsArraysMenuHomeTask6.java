@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class LoopsArraysMenuHomeTask6 {
     public static void runloop() {
         Scanner scanner = new Scanner(System.in);
-
         labelOfExit:
         while (true) {
             while (true) {
@@ -17,12 +16,10 @@ public class LoopsArraysMenuHomeTask6 {
                         "\n 1 - Bubble sotr from smaller to bigger and from bigger to smaller" +
                         "\n 2 - Sort array by 'Selection sort'" +
                         "\n 3 - The two-dimensional array with a maximum output of a random number from -99 to 99\n" +
-
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
                     numberOfChoice = scanner.nextInt();
-
                     switch (numberOfChoice) {
                         case 0:
                             System.out.println("Starting program: " + "Exit");

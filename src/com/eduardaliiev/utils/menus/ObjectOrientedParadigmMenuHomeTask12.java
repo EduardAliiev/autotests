@@ -1,21 +1,21 @@
 package com.eduardaliiev.utils.menus;
 
-import com.eduardaliiev.utils.arrays.utils.input.InputDataWhiteCollar;
-import com.eduardaliiev.utils.arrays.utils.input.InputDataHuman;
+import com.eduardaliiev.utils.arrays.objectorientedparadigm.polymorphism.RandomArrayCreator;
+import com.eduardaliiev.utils.arrays.objectorientedparadigm.polymorphism.bicycle.Bicycle;
 
 import java.util.Scanner;
 
-public class ObjectOrientedParadigmMenuHomeTask11 {
+public class ObjectOrientedParadigmMenuHomeTask12 {
     public static void runnerObjectOrientedParadigm() {
         Scanner scanner = new Scanner(System.in);
-
         labelOfExit:
         while (true) {
             while (true) {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-                        "\n 1 - Enter the name  and the age of human" +
-                        "\n 2 - Enter name of the company\n" +
+                        "\n 1 - Use of a method \'Overloaded\'" +
+                       // "\n 2 - Enter name of the company\n" +
+                        "\n 3 - Bicycle -> CustomBicycle -> BicycleWithRing\n" +
 
                         "\n 0 - Exit");
                 int numberOfChoice;
@@ -26,12 +26,16 @@ public class ObjectOrientedParadigmMenuHomeTask11 {
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
                         case 1:
-                            System.out.println("Starting program: " + "Enter the name  and the age of human");
-                            InputDataHuman.inputData();
+                            System.out.println("Starting program: " + "Use of a method \'Overloaded\'");
+                            RandomArrayCreator.overloadedCreate();
                             break;
-                        case 2:
+                       /* case 2:
                             System.out.println("Starting program: " + "Enter name of the company");
                             InputDataWhiteCollar.inputData();
+                            break;*/
+                        case 3:
+                            System.out.println("Starting program: " + "Bicycle -> CustomBicycle -> BicycleWithRing");
+                            Bicycle.ride();
                             break;
                         default:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");

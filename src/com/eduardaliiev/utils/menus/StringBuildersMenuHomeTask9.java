@@ -5,12 +5,12 @@ import com.eduardaliiev.utils.arrays.stringbuildersarray.SetOfNumbers;
 import com.eduardaliiev.utils.arrays.stringbuildersarray.StringKeyWord;
 import com.eduardaliiev.utils.arrays.utils.input.InputMethodeEnigma;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class StringBuildersMenuHomeTask9 {
     public static void runnerString() {
         Scanner scanner = new Scanner(System.in);
-
         labelOfExit:
         while (true) {
             while (true) {
@@ -30,7 +30,11 @@ public class StringBuildersMenuHomeTask9 {
                             break labelOfExit;
                         case 1:
                             System.out.println("Starting program: " + "Set of sort numbers from smaller to bigger and from bigger to smaller");
-                            SetOfNumbers.calculateLoopNumbers();
+                            try {
+                                SetOfNumbers.calculateLoopNumbers();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                             break;
                         case 2:
                             System.out.println("Starting program: " + "Enter the value of the array through the delimiter \";\"");

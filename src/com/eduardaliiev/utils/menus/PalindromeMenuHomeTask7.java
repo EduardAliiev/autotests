@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class PalindromeMenuHomeTask7 {
     public static void runPalindrome() {
         Scanner scanner = new Scanner(System.in);
-
-        labelOfExit: while (true) {
+        labelOfExit:
+        while (true) {
             System.out.println("\n Welcome! Select one of the three programs is necessary to make next choice and Press Enter:\n" +
                     "\n 1 - The first method of to calculate Palindrome" +
                     "\n 2 - The second method of to calculate Palindrome" +
@@ -17,7 +17,6 @@ public class PalindromeMenuHomeTask7 {
             int numberOfChoice;
             if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
                 numberOfChoice = scanner.nextInt();
-
                 switch (numberOfChoice) {
                     case 0:
                         System.out.println("Starting program: " + "Exit" + "\n Good luck!!");
@@ -34,7 +33,6 @@ public class PalindromeMenuHomeTask7 {
                         System.out.println("Starting program: " + "The third method of to calculate Palindrome");
                         ThirdPalindromeMethod.runPalindrome();
                         break;
-
                     default:
                         System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
                         break;     //break labelOfExit;           // для выхода из цикла

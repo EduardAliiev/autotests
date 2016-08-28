@@ -19,12 +19,10 @@ public class LoopsArraysMenuHomeTask5 {
                         "\n 4 - Array of random integer Max/Min numbers from 0 to 999" +
                         "\n 5 - Two-dimensional array of random integer numbers from 10 to 99" +
                         "\n 6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999\n" +
-
                         "\n 0 - Exit");
                 int numberOfChoice;
                 if (scanner.hasNextInt()) {                    // проверка на вводимое целое число
                     numberOfChoice = scanner.nextInt();
-
                     switch (numberOfChoice) {
                         case 0:
                             System.out.println("Starting program: " + "Exit");
@@ -68,7 +66,6 @@ public class LoopsArraysMenuHomeTask5 {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
             }
         }
     }
