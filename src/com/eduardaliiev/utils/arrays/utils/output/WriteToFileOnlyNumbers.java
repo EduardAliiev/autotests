@@ -1,13 +1,20 @@
 package com.eduardaliiev.utils.arrays.utils.output;
 
 import com.eduardaliiev.utils.arrays.readerandwriterfile.ReaderAndWriterPath;
+import com.eduardaliiev.utils.arrays.readerandwriterfile.SortNumbersReadToWrite;
 
-public class WriteToFile extends ReaderAndWriterPath {
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
 
-   /* public static void writeToFile(String outputPath)
+public class WriteToFileOnlyNumbers extends ReaderAndWriterPath {
+
+    public static void writeToFile(String outputPath)
             throws IOException {
-       SortNumbers sortNumbers = new SortNumbers();            // вызываем класс SortNumbers
-        int[] numbersToString = SortNumbers.tempSortSmallToBig();   //присваиваем полученное значение с класса SortNumbers
+       SortNumbersReadToWrite sortNumbers = new SortNumbersReadToWrite();            // вызываем класс SortNumbersReadToWrite
+        int[] numbersToString = SortNumbersReadToWrite.tempSortSmallToBig();   //присваиваем полученное значение с класса SortNumbersReadToWrite
 
         String stringArrays = Arrays.toString(numbersToString);         // переводим массив int[] в String
 
@@ -17,5 +24,5 @@ public class WriteToFile extends ReaderAndWriterPath {
         writer.newLine();
         System.out.println("\n\nThe sorted data are written to the file: " + stringArrays);
         writer.close();
-    }*/
+    }
 }

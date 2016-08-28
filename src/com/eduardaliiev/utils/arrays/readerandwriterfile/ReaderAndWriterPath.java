@@ -1,18 +1,18 @@
-package lessonworks.recordreadingfile.Two;
+package com.eduardaliiev.utils.arrays.readerandwriterfile;
 
-public class InputOutputPathToFile {
+public class ReaderAndWriterPath {
 
-    static String inputPath;
-    private static String outputPath;
+    protected static String inputPath;
+    protected static String outputPath;
 
-    public InputOutputPathToFile(String inputPath, String outputPath) {
-        this.inputPath = inputPath;
-        this.outputPath = outputPath;
+    public ReaderAndWriterPath(String inputPath, String outputPath) {
+        ReaderAndWriterPath.inputPath = inputPath;
+        ReaderAndWriterPath.outputPath = outputPath;
     }
 
-    public InputOutputPathToFile() {
-        this.inputPath = "/Users/edikaliiev/Desktop/input.txt";
-        this.outputPath = "/Users/edikaliiev/Desktop/output.txt";
+    public ReaderAndWriterPath() {
+        inputPath = "/Users/edikaliiev/Desktop/input.txt";
+        outputPath = "/Users/edikaliiev/Desktop/output.txt";
     }
 
     public static String getInputPath() {
