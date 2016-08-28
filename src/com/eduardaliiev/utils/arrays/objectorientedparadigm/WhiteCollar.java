@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 public class WhiteCollar extends Human {
     Scanner scanner = new Scanner(System.in);
 
-
     private String company;
 
     public void setCompany(String company) {

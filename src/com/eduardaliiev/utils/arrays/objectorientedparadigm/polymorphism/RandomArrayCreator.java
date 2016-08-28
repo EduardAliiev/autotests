@@ -1,45 +1,36 @@
-package com.eduardaliiev.utils.arrays.objectorientedparadigm;
+package com.eduardaliiev.utils.arrays.objectorientedparadigm.polymorphism;
+
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class RandomArrayCreator {
-    /*public void overloadedCreate() {
-        Scanner scanner = new Scanner(in);
-        System.out.println("Enter array length: ");
+
+    public static void overloadedCreate() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter array Row length: ");
         int sizeRow = scanner.nextInt(); // Вводим с клавиатуры размер массива строки и записываем в size
-*/
-
-
-       /* int[] create (int[] arraysNumbers) {
-          arraysNumbers = new
-            arraysNumbers = new int[sizeRow];
-            return arraysNumbers;
-        }*/
-
-   /* int[][] create (int array[][]) {
-        Scanner scanner = new Scanner(System.in); // Объявляем Scanner
-        System.out.println("Enter array length: ");
-        int sizeRow = scanner.nextInt(); // Вводим с клавиатуры размер массива строки и записываем в size
+        System.out.println("Enter array Column length: ");
         int sizeColumn = scanner.nextInt(); // Вводим с клавиатуры размер массива ряда и записываем в size
-        array = new int[sizeRow][sizeColumn];
-        return array;
-    }*/
 
-
-    /*public static void randomCalculate() {
-        Scanner scanner = new Scanner(in);
-
-        // int arraysNumbers[] = new int[sizeRow]; // Создаём одномерный массив int размером в size
-
-        System.out.print("Please, enter boundary [min,max] of the array: \n");
-        int minBoundaryNum = scanner.nextInt();                     //ввод минимального значения диапазона массива
-        int maxBoundaryNum = scanner.nextInt();                     //ввод максимального значения диапазона массива
-
-        for (int i = 0; i < arraysNumbers.length; i++) {
-            System.out.println();
-            //  for (int j = 0; j < arraysNumbers[i].length; j++) {
-            arraysNumbers[i] = minBoundaryNum + (int) (Math.random() * ((maxBoundaryNum - minBoundaryNum) + 1));     //перебор рамдомных значений в min/max диапозоне
-            System.out.printf("%4d  ", arraysNumbers[i]);                                                           // f(%4d - выравниваем выводимый массив
+        if (sizeColumn == 0) {
+            int[] arraysOneNumbers = new int[sizeRow]; // Создаём массив int[] размером в sizeRow
+            Overload overload = new Overload();
+            System.out.print("\r" + Arrays.toString(overload.create(arraysOneNumbers)));
+        } else {
+            int[][] arraysTwoNumbers = new int[sizeRow][sizeColumn]; // Создаём массив int[][] размером в sizeRow и sizeColumn
+            Overload overload = new Overload();
+            System.out.println("\n" + (overload.create(arraysTwoNumbers)) + "\r");
         }
-    }*/
+    }
 
 
+    public int[] getOverrideOne() {
+        RandomArrayCreator randomArrayParametrized = new RandomArrayCreator();
+        return new int[0];
+    }
+    public int[][] getOverrideTwo() {
+        return new int[0][];
+    }
 }
+
+

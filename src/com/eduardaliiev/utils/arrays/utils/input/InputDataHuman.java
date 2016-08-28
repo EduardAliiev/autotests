@@ -8,11 +8,10 @@ public class InputDataHuman {
 
     public static void inputData() {
         Scanner scanner = new Scanner(System.in);
-
         Human human = new Human();
         System.out.print("\nPlease, enter name human: ");
         String nameHuman = scanner.nextLine();
-        human.setName(nameHuman);
+        human.setName(nameHuman);                                       // возвращаем имя с класса Human
         System.out.println("Human name is " + human.getName() + "!");
 
         System.out.print("\nPlease, enter age human ");

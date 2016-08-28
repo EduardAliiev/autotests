@@ -1,7 +1,9 @@
 package com.eduardaliiev.utils.arrays.objectorientedparadigm.polymorphism.bicycle;
 
-/**
- * Created by edikaliiev on 8/23/16.
- */
-public class Bicycle {
+public abstract class Bicycle {
+    public abstract String setSpeed();
+    public abstract String setGear();
+
+    public static void ride() {
+        System.out.println("\"Wroom!\"");}
 }

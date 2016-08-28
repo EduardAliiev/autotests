@@ -11,7 +11,7 @@ public class StringKeyWord {
         System.out.print("Please, enter a keyword in the string: ");
         String inputKeywordString = scanner.nextLine();
         System.out.println(inputString.replaceAll(inputKeywordString, "\n"));    // удаляем ключевое слово из строки
-               // .replaceAll("\\s{2,}", " "));                             // строка для удаления 2х пробелов
+        // .replaceAll("\\s{2,}", " "));                             // строка для удаления 2х пробелов
     }
 }
 

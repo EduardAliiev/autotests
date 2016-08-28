@@ -7,12 +7,8 @@ public class BubbleSortEnteredKeyboardArray {
 
     public static void calculateLoopBubbleSort() {
 
-       // final int BOLWEmenwe = 0;
-        //final  int menweBOLWE = 1;
-
         Scanner scanner = new Scanner(System.in);
         int j;
-
 
         System.out.print("Please, enter size of the array: ");
 
@@ -25,17 +21,10 @@ public class BubbleSortEnteredKeyboardArray {
         System.out.println("\n" + "0 - От меньшего к большему" +
                 "\n" + "1 - От большего к меньшему");
 
-     //   if (menweBOLWE == BOLWEmenwe) {
-       //     System.out.println("IF & ELSE: BubbleSort");
-       // } else if (BOLWEmenwe == menweBOLWE) {
-        //    System.out.println("IF & ELSE: BubbleSort");
-       // }
-
-
         int numberOfExempls = (int) scanner.nextDouble();
-                switch (numberOfExempls) {
+        switch (numberOfExempls) {
             case 0:
-                System.out.println( "BB->MM");
+                System.out.println("BB->MM");
                 BubbleSort.calculateLoopBubbleSort();
                 break;
             case 1:

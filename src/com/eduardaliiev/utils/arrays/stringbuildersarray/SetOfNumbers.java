@@ -4,17 +4,17 @@ import com.eduardaliiev.utils.arrays.utils.input.InputNumbersOfKeyboard;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersBigToSmall;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersSmallToBig;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class SetOfNumbers {
 
-    public static void calculateLoopNumbers() {
+    public static void calculateLoopNumbers() throws IOException {
 
         Scanner scanner = new Scanner(System.in);
 
         InputNumbersOfKeyboard inputNumbersOfKeyboard = new InputNumbersOfKeyboard();              //Вызываем метод ввода значений массива
         int[] arraysNumber = inputNumbersOfKeyboard.inputNumbersOfKeyboard();
-
 
         labelOfExit:
         while (true) {

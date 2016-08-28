@@ -13,9 +13,7 @@ public class SecondPalindromeMethod {
         String palindromeTwoNew = new StringBuffer(palindromeTwo).reverse().toString();   // "отзеркаливаем" введенное слово
         if (palindromeTwo.toLowerCase().equals(palindromeTwoNew.toLowerCase())) {               // сравниваем два слова (String)
             System.out.println("It's a Palindrome!");
-        } else
-        //if (palindromeOne != palindromeOneNew)
-            {
+        } else {
             System.out.println("Not a palindrome :(");
         }
     }

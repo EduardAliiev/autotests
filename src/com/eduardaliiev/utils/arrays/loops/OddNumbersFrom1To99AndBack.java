@@ -1,10 +1,7 @@
 package com.eduardaliiev.utils.arrays.loops;
 
-import java.util.Scanner;
-
 public class OddNumbersFrom1To99AndBack {
     public static void calculateLoopNumbers() {
-        Scanner scanner = new Scanner(System.in);
         int A = 0;
         int B = 100;
         while (A <= 99) {

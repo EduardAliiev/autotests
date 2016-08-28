@@ -23,6 +23,3 @@ public class EnigmaCipherMethod {
         return cipherText;
     }
 }
-
-    /*String originalText = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXVZabcdefghijklmnopqrstuvwxyz ";
-    String  cipherText = "QWERTYUIOPqwertyuiopASDFGHJKL 12345asdfghjklZXCVBNM67890zxcvbnm";*/

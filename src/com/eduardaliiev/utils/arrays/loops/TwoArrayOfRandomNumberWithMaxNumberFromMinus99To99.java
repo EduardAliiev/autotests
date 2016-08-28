@@ -1,17 +1,13 @@
 package com.eduardaliiev.utils.arrays.loops;
 
-import com.eduardaliiev.utils.arrays.utils.actionswitharray.RandomCalculateNumbers;
-
-import java.util.Scanner;
+import com.eduardaliiev.utils.arrays.utils.actionswitharray.RandomCalculateTwoArrayNumbers;
 
 public class TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99 {
 
     public static void calculateLoopNumbers() {
-
-        Scanner scanner = new Scanner(System.in);
         int arraysNumbers[][] = new int[5][8];
 
-        RandomCalculateNumbers randomCalculateNumbers = new RandomCalculateNumbers();
+        RandomCalculateTwoArrayNumbers randomCalculateNumbers = new RandomCalculateTwoArrayNumbers();
         randomCalculateNumbers.randomCalculate(arraysNumbers);
 
         System.out.print("\n");

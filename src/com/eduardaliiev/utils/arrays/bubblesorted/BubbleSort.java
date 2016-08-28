@@ -4,6 +4,8 @@ import com.eduardaliiev.utils.arrays.utils.input.InputNumbersOfKeyboard;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersBigToSmall;
 import com.eduardaliiev.utils.arrays.utils.actionswitharray.TempSortedNumbersSmallToBig;
 
+import java.io.IOException;
+
 public class BubbleSort {
     public static void calculateLoopBubbleSort() {
 
@@ -16,6 +18,10 @@ public class BubbleSort {
         System.out.println(" ");
 
         TempSortedNumbersBigToSmall tempSortedNumbersBigToSmall = new TempSortedNumbersBigToSmall();    //Вызываем метод сортировки чисел от большего к меньшему
-        tempSortedNumbersBigToSmall.tempSortBigToSmall(arraysNumber);
+        try {
+            tempSortedNumbersBigToSmall.tempSortBigToSmall(arraysNumber);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

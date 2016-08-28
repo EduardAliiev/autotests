@@ -1,11 +1,9 @@
 package com.eduardaliiev.utils.arrays.loops;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class ArrayOfRandomIntegerNumbersFrom0To9 {
     public static void calculateLoopNumbers() {
-        Scanner scanner = new Scanner(System.in);
         int evenNumbers = 0;
         int[] arraysNumber = new int[15];
         for (int i = 0; i < arraysNumber.length; i++) {

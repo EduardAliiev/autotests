@@ -2,11 +2,9 @@ package com.eduardaliiev.utils.arrays.loops;
 
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class ArrayOfRandomIntegerMaxMinNumbersFrom0To999 {
     public static void calculateLoopNumbers() {
-        Scanner scanner = new Scanner(System.in);
         int arraysNumber[] = new int[15];
         int i = 0;
         while (i < arraysNumber.length) {
@@ -17,7 +15,7 @@ public class ArrayOfRandomIntegerMaxMinNumbersFrom0To999 {
         }
         int min = arraysNumber[0];
         int max = arraysNumber[0];
-        for (int anArraysNumber : arraysNumber) {         // forEach
+        for (int anArraysNumber : arraysNumber) {         // for-Each
             if (anArraysNumber < min)
                 min = anArraysNumber;
             if (anArraysNumber > max)

@@ -1,8 +1,11 @@
 package com.eduardaliiev.utils.arrays.utils.actionswitharray;
 
+import java.io.IOException;
+
 public class TempSortedNumbersBigToSmall {
 
-    public void tempSortBigToSmall(int[] arraysNumber) {
+    public static int[] tempSortBigToSmall(int[] arraysNumber) throws IOException {
+
         boolean swapFlag = true;
         int tempInt;
         int i;
@@ -22,7 +25,7 @@ public class TempSortedNumbersBigToSmall {
         for (i = arraysNumber.length - 1; i >= 0; i--) {
             System.out.print(arraysNumber[i] + " ");
         }
-        System.out.print("]");
-       // return arraysNumber;
+        System.out.println("]");
+        return arraysNumber;
     }
 }

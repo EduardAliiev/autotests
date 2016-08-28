@@ -19,9 +19,6 @@ public class InputNumbersOfKeyboard {
 
         System.out.print("\n" + " Entered array is " + Arrays.toString(arraysNumber).replace(",", ";") +
                 " \n ===================================== \n");
-
-
         return arraysNumber;
-
     }
 }

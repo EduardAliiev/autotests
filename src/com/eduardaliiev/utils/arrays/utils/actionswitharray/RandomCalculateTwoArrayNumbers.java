@@ -2,7 +2,7 @@ package com.eduardaliiev.utils.arrays.utils.actionswitharray;
 
 import java.util.Scanner;
 
-public class RandomCalculateNumbers {
+public class RandomCalculateTwoArrayNumbers {
 
     public void randomCalculate(int[][] arraysNumbers) {
         Scanner scanner = new Scanner(System.in);
@@ -20,6 +20,3 @@ public class RandomCalculateNumbers {
         }
     }
 }
-
-/*RandomCalculateNumbers randomCalculateNumbers = new RandomCalculateNumbers();
-        randomCalculateNumbers.randomCalculate(arraysNumbers);*/

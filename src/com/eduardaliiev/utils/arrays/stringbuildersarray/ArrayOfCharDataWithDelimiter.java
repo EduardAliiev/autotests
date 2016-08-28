@@ -12,8 +12,6 @@ public class ArrayOfCharDataWithDelimiter {
         System.out.println("Entered values: -> " + outputOnlyCharacters(inputString));
     }
 
-   // OutputOnlyCharacters outputOnlyCharacters = new OutputOnlyCharacters();
-
     private static String outputOnlyCharacters(String inputString) {
         StringBuilder onlyChar = new StringBuilder();
         for (int i = 0; i < inputString.length(); i++) {

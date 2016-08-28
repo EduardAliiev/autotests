@@ -1,7 +1,19 @@
 package com.eduardaliiev.utils.arrays.objectorientedparadigm.polymorphism.bicycle;
 
-/**
- * Created by edikaliiev on 8/23/16.
- */
-public class BicycleWithRing {
+public class BicycleWithRing extends CustomBicycle {
+    BicycleWithRingInterface bicycleWithRingInterface = new BicycleWithRingInterface() {
+        @Override
+        public void ring() {
+            System.out.println("\"Di-ling!\"");
+        }
+    };
+
+    @Override
+    public void ring() {
+    }
+
+    public interface BicycleWithRingInterface {
+        void ring();
+    }
 }
+

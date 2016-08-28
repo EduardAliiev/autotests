@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class TempSortedNumbersSmallToBig {
 
-    public void tempSortSmallToBig(int[] arraysNumber) {
+    public int[] tempSortSmallToBig(int[] arraysNumber) {
         boolean swapFlag = true;
         int tempInt;
         int i;
@@ -22,8 +22,7 @@ public class TempSortedNumbersSmallToBig {
         for (i = 0; i < arraysNumber.length; i++) {
             arraysNumber[i] = Integer.valueOf(arraysNumber[i]);
         }
-            System.out.print(Arrays.toString(arraysNumber));
-
-//        return arraysNumber;
+        System.out.println(Arrays.toString(arraysNumber));
+        return arraysNumber;
     }
 }
