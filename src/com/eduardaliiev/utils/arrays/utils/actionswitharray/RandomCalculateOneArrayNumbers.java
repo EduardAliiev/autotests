@@ -12,7 +12,6 @@ public class RandomCalculateOneArrayNumbers {
         int maxBoundaryNum = scanner.nextInt();                     //ввод максимального значения диапазона массива
 
         for (int i = 0; i < arraysNumbers.length; i++) {
-            //System.out.println();
             arraysNumbers[i] = minBoundaryNum + (int) (Math.random() * ((maxBoundaryNum - minBoundaryNum) + 1));     //перебор рамдомных значений в min/max диапозоне
             System.out.printf("%4d  ", arraysNumbers[i]);                                                           // f(%4d - выравниваем выводимый массив
         }
