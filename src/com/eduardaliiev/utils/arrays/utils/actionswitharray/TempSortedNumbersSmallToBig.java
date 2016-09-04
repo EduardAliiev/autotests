@@ -6,8 +6,7 @@ public class TempSortedNumbersSmallToBig {
 
     public int[] tempSortSmallToBig(int[] arraysNumber) {
         boolean swapFlag = true;
-        int tempInt;
-        int i;
+        int tempInt, i;
         while (swapFlag) {
             swapFlag = false;
             for (i = 0; i < arraysNumber.length - 1; i++) {

@@ -7,8 +7,7 @@ public class TempSortedNumbersBigToSmall {
     public static int[] tempSortBigToSmall(int[] arraysNumber) throws IOException {
 
         boolean swapFlag = true;
-        int tempInt;
-        int i;
+        int tempInt, i;
         while (swapFlag) {
             swapFlag = false;
             for (i = 0; i < arraysNumber.length - 1; i++) {
