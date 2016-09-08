@@ -4,6 +4,7 @@ import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.RandomArr
 import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.bicycle.Bicycle;
 import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ObjectOrientedParadigmMenuHomeTask12 {
@@ -11,8 +12,9 @@ public class ObjectOrientedParadigmMenuHomeTask12 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Use of a method \'Overloaded\'" +
@@ -44,11 +46,16 @@ public class ObjectOrientedParadigmMenuHomeTask12 {
                             System.out.println("Starting program: " + "Bicycle -> CustomBicycle -> BicycleWithRing");
                             Bicycle.ride();
                             break;
+                        case SKIP:
+                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                } catch (NullPointerException e) {
+                    scanner.next();
+                } catch (InputMismatchException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    scanner.next();
                 }
             }
         }

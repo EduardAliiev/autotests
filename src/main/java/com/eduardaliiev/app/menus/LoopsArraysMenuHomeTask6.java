@@ -5,6 +5,7 @@ import com.eduardaliiev.app.arrays.loops.SelectionSortArray;
 import com.eduardaliiev.app.arrays.loops.TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99;
 import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LoopsArraysMenuHomeTask6 {
@@ -12,8 +13,9 @@ public class LoopsArraysMenuHomeTask6 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Bubble sotr from smaller to bigger and from bigger to smaller" +
@@ -44,11 +46,16 @@ public class LoopsArraysMenuHomeTask6 {
                             System.out.println("Starting program: " + "The two-dimensional array with a maximum output of a random number from -99 to 99");
                             TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99.calculateLoopNumbers();
                             break;
+                        case SKIP:
+                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                } catch (NullPointerException e) {
+                    scanner.next();
+                } catch (InputMismatchException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    scanner.next();
                 }
             }
         }

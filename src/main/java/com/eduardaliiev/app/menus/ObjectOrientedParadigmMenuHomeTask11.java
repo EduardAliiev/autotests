@@ -11,8 +11,9 @@ public class ObjectOrientedParadigmMenuHomeTask11 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Enter the name  and the age of human" +

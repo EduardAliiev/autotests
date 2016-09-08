@@ -25,7 +25,6 @@ public class GenericsMenuHomeTask15 {
                     for (EnumNumbersOfMenus value1 : EnumNumbersOfMenus.values()) {
                         if (numberOfChoice.equals(value1.getValue())) {
                             selectedValue = value1;
-
                             break;
                         }
                     }

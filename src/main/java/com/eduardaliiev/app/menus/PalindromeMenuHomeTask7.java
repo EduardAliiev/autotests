@@ -5,6 +5,7 @@ import com.eduardaliiev.app.arrays.palindrome.SecondPalindromeMethod;
 import com.eduardaliiev.app.arrays.palindrome.ThirdPalindromeMethod;
 import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PalindromeMenuHomeTask7 {
@@ -12,8 +13,9 @@ public class PalindromeMenuHomeTask7 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the three programs is necessary to make next choice and Press Enter:\n" +
                         "\n 1 - The first method of to calculate Palindrome" +
                         "\n 2 - The second method of to calculate Palindrome" +
@@ -43,11 +45,16 @@ public class PalindromeMenuHomeTask7 {
                             System.out.println("Starting program: " + "The third method of to calculate Palindrome");
                             ThirdPalindromeMethod.runPalindrome();
                             break;
+                        case SKIP:
+                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                } catch (NullPointerException e) {
+                    scanner.next();
+                } catch (InputMismatchException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    scanner.next();
                 }
             }
         }

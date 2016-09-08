@@ -6,6 +6,7 @@ import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
 import com.eduardaliiev.app.arrays.utils.output.WriteToFileOnlyNumbers;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ReaderAndWriterMenuHomeTask10 {
@@ -13,8 +14,9 @@ public class ReaderAndWriterMenuHomeTask10 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Reading numbers and sort from smaller to bigger" +
@@ -45,11 +47,16 @@ public class ReaderAndWriterMenuHomeTask10 {
                             System.out.println("Starting program: " + "Create a new file, fill it up and enter verification word: \'exit\'");
                             EnterWordsAndExit.createFileAndWrite();
                             break;
+                        case SKIP:
+                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                } catch (NullPointerException e) {
+                    scanner.next();
+                } catch (InputMismatchException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    scanner.next();
                 }
             }
         }

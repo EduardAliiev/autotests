@@ -3,6 +3,7 @@ package com.eduardaliiev.app.menus;
 import com.eduardaliiev.app.arrays.utils.enums.*;
 import com.eduardaliiev.app.calculators.*;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GeometricFiguresCalculateMenuHomeTask4 {
@@ -10,8 +11,9 @@ public class GeometricFiguresCalculateMenuHomeTask4 {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
-            EnumNumbersOfMenus selectedValue = null;
+            EnumNumbersOfMenus selectedValue;
             while (true) {
+                selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter:\n" +
                         "\n 1 - Circle Area" +
@@ -47,11 +49,16 @@ public class GeometricFiguresCalculateMenuHomeTask4 {
                             System.out.println("Starting program: " + "Numbers Is Even Or Odd");
                             EvenOrOdd.calculateEvenOrOdd();
                             break;
+                        case SKIP:
+                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                } catch (NullPointerException e) {
+                    scanner.next();
+                } catch (InputMismatchException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                    scanner.next();
                 }
             }
         }
