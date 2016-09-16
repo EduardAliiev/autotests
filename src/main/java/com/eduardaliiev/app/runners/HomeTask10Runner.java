@@ -2,7 +2,7 @@ package com.eduardaliiev.app.runners;
 
 import com.eduardaliiev.app.menus.StringBuildersMenuHomeTask10;
 
-public class HomeTask9Runner {
+public class HomeTask10Runner {
 
     public static void main(String args[]) {
 
