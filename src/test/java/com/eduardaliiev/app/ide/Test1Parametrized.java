@@ -1,4 +1,5 @@
-package com.eduardaliiev.app.math;
+/*
+package com.eduardaliiev.app.ide;
 
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
@@ -53,7 +54,7 @@ public class Test1Parametrized {
         new Select(driver.findElement(By.id("input_71_month"))).selectByVisibleText(month);
         new Select(driver.findElement(By.id("input_71_day"))).selectByVisibleText(day);
         new Select(driver.findElement(By.id("input_71_year"))).selectByVisibleText(year);
-        new Select(driver.findElement(By.id("input_69"))).selectByVisibleText("Work");
+//        new Select(driver.findElement(By.id("input_69"))).selectByVisibleText("Work");
         Thread.sleep(5000);
         driver.findElement(By.id("input_62")).click();
         Thread.sleep(1000);
@@ -102,4 +103,4 @@ public class Test1Parametrized {
             acceptNextAlert = true;
         }
     }
-}
+}*/

@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class WriteToFileOnlyNumbers extends ReaderAndWriterPath {
 
-    public static void writeToFile(String outputPath)
+    public static void writeToFile(String outputPathWriteToFileOnlyNumbers)
             throws IOException {
        SortNumbersReadToWrite sortNumbers = new SortNumbersReadToWrite();            // вызываем класс SortNumbersReadToWrite
         int[] numbersToString = SortNumbersReadToWrite.tempSortSmallToBig();   //присваиваем полученное значение с класса SortNumbersReadToWrite

@@ -1,4 +1,6 @@
-package com.eduardaliiev.app.math;
+/*
+package com.eduardaliiev.app.basiсtest;
+
 
 import org.junit.*;
 import org.junit.runners.MethodSorters;
@@ -35,12 +37,12 @@ public class BasicTests {
         Arrays.sort(inputData);
         Assert.assertArrayEquals(expectedResults, inputData);
     }
-    @Ignore ("Not ready yet")
+
     @Test
     public void bSecondTest() {
         System.out.println("Parallel sorting test");
         Arrays.parallelSort(inputData);
-        Assert.assertArrayEquals(expectedResults, inputData);
+        Assert.assertEquals(expectedResults, inputData);
     }
 
     @Test(timeout = 1000)
@@ -61,7 +63,12 @@ public class BasicTests {
         expectedResults = null;
     }
 
-    public static int[] readTheFile(String path) throws IOException {
+    @AfterClass
+    public static void postConditionsForClass() {
+        inputData = null;
+    }
+
+    private static int[] readTheFile(String path) throws IOException {
         int[] result = null;
         BufferedReader reader = new BufferedReader(new FileReader(path));
         String line;
@@ -74,7 +81,7 @@ public class BasicTests {
         return result;
     }
 
-    public static int[] fromStringArray(String[] array) {
+    private static int[] fromStringArray(String[] array) {
         int[] result = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             result[i] = Integer.valueOf(array[i]);
@@ -82,3 +89,4 @@ public class BasicTests {
         return result;
     }
 }
+*/

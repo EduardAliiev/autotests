@@ -11,8 +11,8 @@ public class ReaderAndWriterPath {
     }
 
     public ReaderAndWriterPath() {
-        inputPath = "/Users/edikaliiev/Desktop/input.txt";
-        outputPath = "/Users/edikaliiev/Desktop/output.txt";
+        inputPath = "src/main/java/com/eduardaliiev/app/arrays/resources/input.txt";
+        outputPath = "src/main/java/com/eduardaliiev/app/arrays/resources/output.txt";
     }
 
     public static String getInputPath() {
