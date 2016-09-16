@@ -5,5 +5,4 @@ public class MathFunc {
     {
         return a*b;
     }
-
 }

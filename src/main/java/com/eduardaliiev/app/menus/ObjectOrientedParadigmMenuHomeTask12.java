@@ -1,10 +1,9 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.RandomArrayCreator;
-import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.bicycle.Bicycle;
 import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.arrays.utils.input.InputDataHuman;
+import com.eduardaliiev.app.arrays.utils.input.InputDataWhiteCollar;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ObjectOrientedParadigmMenuHomeTask12 {
@@ -17,9 +16,8 @@ public class ObjectOrientedParadigmMenuHomeTask12 {
                 selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-                        "\n 1 - Use of a method \'Overloaded\'" +
-                        "\n 2 - Random array parametrized" +
-                        "\n 3 - Bicycle -> CustomBicycle -> BicycleWithRing\n" +
+                        "\n 1 - Enter the name  and the age of human" +
+                        "\n 2 - Enter name of the company\n" +
                         "\n 0 - Exit");
                 try {
                     String numberOfChoice = String.valueOf(scanner.nextInt());
@@ -34,28 +32,18 @@ public class ObjectOrientedParadigmMenuHomeTask12 {
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
                         case FIRST:
-                            System.out.println("Starting program: " + "Use of a method \'Overloaded\'");
-                            RandomArrayCreator.overloadedCreate();
+                            System.out.println("Starting program: " + "Enter the name  and the age of human");
+                            InputDataHuman.inputData();
                             break;
                         case SECOND:
-                            System.out.println("Random array parametrized");
-                            // RandomArrayParametrized randomArrayParametrized = new RandomArrayParametrized();
-                            RandomArrayCreator.overloadedCreate();
-                            break;
-                        case THIRD:
-                            System.out.println("Starting program: " + "Bicycle -> CustomBicycle -> BicycleWithRing");
-                            Bicycle.ride();
-                            break;
-                        case SKIP:
-                            System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
+                            System.out.println("Starting program: " + "Enter name of the company");
+                            InputDataWhiteCollar.inputData();
                             break;
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Invalid is entered number of choice :(");
-                    scanner.next();
-                } catch (InputMismatchException e) {
+                } catch (NullPointerException e) {
                     System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
-                    scanner.next();
                 }
             }
         }

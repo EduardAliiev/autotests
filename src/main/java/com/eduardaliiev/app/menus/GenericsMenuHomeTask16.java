@@ -1,17 +1,14 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.stringbuildersarray.ArrayOfCharDataWithDelimiter;
-import com.eduardaliiev.app.arrays.stringbuildersarray.SetOfNumbers;
-import com.eduardaliiev.app.arrays.stringbuildersarray.StringKeyWord;
+import com.eduardaliiev.app.arrays.generics.ArraySorterGenerics;
+import com.eduardaliiev.app.arrays.generics.WordsSorterGenerics;
 import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
-import com.eduardaliiev.app.arrays.utils.input.InputMethodeEnigma;
 
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class StringBuildersMenuHomeTask9 {
-    public static void runnerString() {
+public class GenericsMenuHomeTask16 {
+    public static void runnerGenerics() {
         Scanner scanner = new Scanner(System.in);
         labelOfExit:
         while (true) {
@@ -20,10 +17,8 @@ public class StringBuildersMenuHomeTask9 {
                 selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-                        "\n 1 - Set of sort numbers from smaller to bigger and from bigger to smaller" +
-                        "\n 2 - Enter the value of the array through the delimiter " +
-                        "\n 3 - Enter a string and specify the keyword" +
-                        "\n 4 - Enigma\n" +
+                        "\n 1 - ArraiSorterGeneriss is sorts an array type, which extends Numbers" +
+                        "\n 2 - Reads a set of words from and after is entered the word-marker outputs the result\n" +
                         "\n 0 - Exit");
                 try {
                     String numberOfChoice = String.valueOf(scanner.nextInt());
@@ -38,24 +33,12 @@ public class StringBuildersMenuHomeTask9 {
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
                         case FIRST:
-                            System.out.println("Starting program: " + "Set of sort numbers from smaller to bigger and from bigger to smaller");
-                            try {
-                                SetOfNumbers.calculateLoopNumbers();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                            System.out.println("Starting program: " + "ArraiSorterGeneriss is sorts an array type, which extends Numbers");
+                            ArraySorterGenerics.genericsCreate();
                             break;
                         case SECOND:
-                            System.out.println("Starting program: " + "Enter the value of the array through the delimiter \";\"");
-                            ArrayOfCharDataWithDelimiter.stringBuilders();
-                            break;
-                        case THIRD:
-                            System.out.println("Starting program: " + "Enter a string and specify the keyword");
-                            StringKeyWord.stringBuilders();
-                            break;
-                        case FOURTH:
-                            System.out.println("Starting program: " + "Enigma");
-                            InputMethodeEnigma.inputMethodeEnigma();
+                            System.out.println("Reads a set of words from and after is entered the word-marker outputs the result");
+                            WordsSorterGenerics.genericsCreate();
                             break;
                         case SKIP:
                             System.out.println("Sorry!! But this number isn't to select a program. Please try again to make your choice!!");
@@ -73,10 +56,3 @@ public class StringBuildersMenuHomeTask9 {
         System.out.println("\n Oh-yeah!! Program has processed your choice! Good luck!!");
     }
 }
-
-
-
-
-
-
-
