@@ -1,7 +1,9 @@
 package com.eduardaliiev.app.arrays.math;
 
-/**
- * Created by edikaliiev on 9/9/16.
- */
+
 public class MathFunc2 {
+    public static int multipy(int numberA, int numberB)
+    {
+        return numberA*numberB;
+    }
 }

@@ -1,9 +1,9 @@
 package com.eduardaliiev.app.arrays.math;
 
 
-public class MathFunc2 {
-    public static int multipy(int numberA, int numberB)
+public class MathFunc3 {
+    public static int multipy(int numA, int numB)
     {
-        return numberA*numberB;
+        return numA*numB;
     }
 }
