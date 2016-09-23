@@ -1,6 +1,6 @@
 package com.eduardaliiev.app.runners;
 
-import com.eduardaliiev.app.convertor.PrimitiveConvertor;
+import com.eduardaliiev.app.methods.convertor.PrimitiveConvertor;
 
 public class PrimitiveConvertorRunner {
     public static void main(String args[]) {

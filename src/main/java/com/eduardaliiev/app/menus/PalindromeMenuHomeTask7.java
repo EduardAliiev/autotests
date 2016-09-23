@@ -1,9 +1,9 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.palindrome.FirstPalindromeMethod;
-import com.eduardaliiev.app.arrays.palindrome.SecondPalindromeMethod;
-import com.eduardaliiev.app.arrays.palindrome.ThirdPalindromeMethod;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.methods.arrays.palindrome.FirstPalindromeMethod;
+import com.eduardaliiev.app.methods.arrays.palindrome.SecondPalindromeMethod;
+import com.eduardaliiev.app.methods.arrays.palindrome.ThirdPalindromeMethod;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

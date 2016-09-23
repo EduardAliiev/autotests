@@ -1,7 +1,7 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.loops.*;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.methods.arrays.loops.*;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

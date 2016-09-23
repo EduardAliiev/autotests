@@ -1,7 +1,7 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.utils.enums.*;
-import com.eduardaliiev.app.calculators.*;
+import com.eduardaliiev.app.utils.enums.*;
+import com.eduardaliiev.app.methods.calculators.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

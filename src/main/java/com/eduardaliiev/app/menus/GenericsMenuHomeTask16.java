@@ -1,8 +1,8 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.generics.ArraySorterGenerics;
-import com.eduardaliiev.app.arrays.generics.WordsSorterGenerics;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.methods.generics.ArraySorterGenerics;
+import com.eduardaliiev.app.methods.generics.WordsSorterGenerics;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

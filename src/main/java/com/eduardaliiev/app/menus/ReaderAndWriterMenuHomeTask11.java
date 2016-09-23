@@ -1,9 +1,9 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.readerandwriterfile.EnterWordsAndExit;
-import com.eduardaliiev.app.arrays.readerandwriterfile.PolindromeReadToWrite;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
-import com.eduardaliiev.app.arrays.utils.output.WriteToFileOnlyNumbers;
+import com.eduardaliiev.app.methods.readerandwriterfile.EnterWordsAndExit;
+import com.eduardaliiev.app.methods.readerandwriterfile.PolindromeReadToWrite;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.utils.output.WriteToFileOnlyNumbers;
 
 import java.io.IOException;
 import java.util.InputMismatchException;

@@ -1,9 +1,9 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.bubblesorted.BubbleSort;
-import com.eduardaliiev.app.arrays.loops.SelectionSortArray;
-import com.eduardaliiev.app.arrays.loops.TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.methods.arrays.bubblesorted.BubbleSort;
+import com.eduardaliiev.app.methods.arrays.loops.SelectionSortArray;
+import com.eduardaliiev.app.methods.arrays.loops.TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

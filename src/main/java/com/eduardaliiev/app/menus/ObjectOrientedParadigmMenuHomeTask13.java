@@ -1,8 +1,8 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.RandomArrayCreator;
-import com.eduardaliiev.app.arrays.objectorientedparadigm.polymorphism.bicycle.Bicycle;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.methods.objectorientedparadigm.polymorphism.RandomArrayCreator;
+import com.eduardaliiev.app.methods.objectorientedparadigm.polymorphism.bicycle.Bicycle;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

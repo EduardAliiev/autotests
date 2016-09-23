@@ -1,8 +1,8 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
-import com.eduardaliiev.app.arrays.utils.input.InputDataHuman;
-import com.eduardaliiev.app.arrays.utils.input.InputDataWhiteCollar;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.utils.input.InputDataHuman;
+import com.eduardaliiev.app.utils.input.InputDataWhiteCollar;
 
 import java.util.Scanner;
 

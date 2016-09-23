@@ -1,10 +1,10 @@
 package com.eduardaliiev.app.menus;
 
-import com.eduardaliiev.app.arrays.stringbuildersarray.ArrayOfCharDataWithDelimiter;
-import com.eduardaliiev.app.arrays.stringbuildersarray.SetOfNumbers;
-import com.eduardaliiev.app.arrays.stringbuildersarray.StringKeyWord;
-import com.eduardaliiev.app.arrays.utils.enums.EnumNumbersOfMenus;
-import com.eduardaliiev.app.arrays.utils.input.InputMethodeEnigma;
+import com.eduardaliiev.app.methods.stringbuildersarray.ArrayOfCharDataWithDelimiter;
+import com.eduardaliiev.app.methods.stringbuildersarray.SetOfNumbers;
+import com.eduardaliiev.app.methods.stringbuildersarray.StringKeyWord;
+import com.eduardaliiev.app.utils.enums.EnumNumbersOfMenus;
+import com.eduardaliiev.app.utils.input.InputMethodeEnigma;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
