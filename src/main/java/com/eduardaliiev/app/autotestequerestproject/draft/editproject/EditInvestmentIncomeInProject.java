@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class EditInvestmentIncomeInProject {
     FirefoxDriver driver;
-    String baseUrl = "https://dev.autotestequerestproject.com/";
+    String baseUrl = "https://dev.equerest.com/";
     //ввод данных пользователя, вспомогательные данные
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";
@@ -29,8 +29,10 @@ public class EditInvestmentIncomeInProject {
     private final By projectEditButton = By.xpath("//*[@id='wrapper']/main/div/div/div/div[2]/div/div[3]/div[2]/div/div[2]/div/div[3]//*[text()[contains(.,'Редактировать')]]");
     //вводим значения "Инвестиционный доход"
     private final By infoInvestmentIncomeEditButton = By.cssSelector(".project-roi>div>button.edit-btn");
-    private final By quickEditorFirstField = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]/div[1]/label/../*[@id='roi1']");
-    private final By quickEditorSecondField = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]/div[2]/label/../*[@id='roi2']");
+    /*private final By quickEditorFirstField = By.xpath("/*//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]/div[1]/label/..*//*[@id='roi1']");*/
+    private final By quickEditorFirstField = By.cssSelector("#roi1");
+    /*private final By quickEditorSecondField = By.xpath("/*//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]/div[2]/label/..*//*[@id='roi2']")*/;
+    private final By quickEditorSecondField = By.cssSelector("#roi2");
     private final By quickEditorSaveButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]//*[text()[contains(.,'Применить')]]");
     //информативное сообщение о "Проект сохранен"
     private final By projectSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Проект сохранен')]]");
