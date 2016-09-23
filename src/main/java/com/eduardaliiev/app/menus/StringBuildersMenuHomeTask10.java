@@ -21,7 +21,7 @@ public class StringBuildersMenuHomeTask10 {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Set of sort numbers from smaller to bigger and from bigger to smaller" +
-                        "\n 2 - Enter the value of the array through the delimiter " +
+                        "\n 2 - Enter the value of the arrays through the delimiter " +
                         "\n 3 - Enter a string and specify the keyword" +
                         "\n 4 - Enigma\n" +
                         "\n 0 - Exit");
@@ -46,7 +46,7 @@ public class StringBuildersMenuHomeTask10 {
                             }
                             break;
                         case SECOND:
-                            System.out.println("Starting program: " + "Enter the value of the array through the delimiter \";\"");
+                            System.out.println("Starting program: " + "Enter the value of the arrays through the delimiter \";\"");
                             ArrayOfCharDataWithDelimiter.stringBuilders();
                             break;
                         case THIRD:

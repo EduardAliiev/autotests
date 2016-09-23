@@ -7,7 +7,7 @@ public class RandomCalculateTwoArrayNumbers {
     public void randomCalculate(int[][] arraysNumbers) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please, enter boundary [min,max] of the array: \n");
+        System.out.print("Please, enter boundary [min,max] of the arrays: \n");
         int minBoundaryNum = scanner.nextInt();                     //ввод минимального значения диапазона массива
         int maxBoundaryNum = scanner.nextInt();                     //ввод максимального значения диапазона массива
 

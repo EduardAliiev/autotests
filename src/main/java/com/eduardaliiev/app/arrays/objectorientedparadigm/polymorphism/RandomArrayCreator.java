@@ -11,9 +11,9 @@ public class RandomArrayCreator {
 
     public static void overloadedCreate() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter array Row length: ");
+        System.out.println("Enter arrays Row length: ");
         int sizeRow = scanner.nextInt(); // Вводим с клавиатуры размер массива строки и записываем в size
-        System.out.println("Enter array Column length: ");
+        System.out.println("Enter arrays Column length: ");
         int sizeColumn = scanner.nextInt(); // Вводим с клавиатуры размер массива ряда и записываем в size
 
         if (sizeColumn == getOverrideOne) {

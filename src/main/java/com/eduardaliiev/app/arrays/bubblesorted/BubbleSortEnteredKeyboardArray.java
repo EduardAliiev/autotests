@@ -10,12 +10,12 @@ public class BubbleSortEnteredKeyboardArray {
         Scanner scanner = new Scanner(System.in);
         int j;
 
-        System.out.print("Please, enter size of the array: ");
+        System.out.print("Please, enter size of the arrays: ");
 
         int size = scanner.nextInt();
         int[] arraysNumber = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.print("Element of the array: ");
+            System.out.print("Element of the arrays: ");
             arraysNumber[i] = scanner.nextInt();
         }
         System.out.println("\n" + "0 - От меньшего к большему" +
@@ -35,8 +35,8 @@ public class BubbleSortEnteredKeyboardArray {
                 System.out.println("exitus");
                 break;
         }
-        System.out.print("\n" + "Original array:" + Arrays.toString(arraysNumber) + "\n ");
-        System.out.print("Sorted array: ");
+        System.out.print("\n" + "Original arrays:" + Arrays.toString(arraysNumber) + "\n ");
+        System.out.print("Sorted arrays: ");
     }
 }
 

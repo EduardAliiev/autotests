@@ -20,8 +20,8 @@ public class LoopsArraysMenuHomeTask5 {
                         "\n 2 - Odd numbers from 1 to 99 and back" +
                         "\n 3 - Array of random integer numbers from 0 to 9" +
                         "\n 4 - Array of random integer Max/Min numbers from 0 to 999" +
-                        "\n 5 - Two-dimensional array of random integer numbers from 10 to 99" +
-                        "\n 6 - Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999\n" +
+                        "\n 5 - Two-dimensional arrays of random integer numbers from 10 to 99" +
+                        "\n 6 - Two-dimensional arrays is aligned on the right side at random integer numbers from 1 to 999\n" +
                         "\n 0 - Exit");
                 try {
                     String numberOfChoice = String.valueOf(scanner.nextInt());
@@ -53,11 +53,11 @@ public class LoopsArraysMenuHomeTask5 {
                             ArrayOfRandomIntegerMaxMinNumbersFrom0To999.calculateLoopNumbers();
                             break;
                         case FIFTH:
-                            System.out.println("Starting program: " + "Two-dimensional array of random integer numbers from 10 to 99");
+                            System.out.println("Starting program: " + "Two-dimensional arrays of random integer numbers from 10 to 99");
                             TwoDimensionalArrayOfRandomIntegerNumbersFrom10To99.calculateLoopNumbers();
                             break;
                         case SIXTH:
-                            System.out.println("Starting program: " + "Two-dimensional array is aligned on the right side at random integer numbers from 1 to 999");
+                            System.out.println("Starting program: " + "Two-dimensional arrays is aligned on the right side at random integer numbers from 1 to 999");
                             TwoArrayOfRandomNumberAlignedOnRightFrom1To999.calculateLoopNumbers();
                             break;
                         case SKIP:

@@ -9,7 +9,7 @@ public class InputNumbersOfKeyboard {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please, enter number of the array by a semicolon(;): ");
+        System.out.print("Please, enter number of the arrays by a semicolon(;): ");
 
         String inputString = scanner.nextLine();
         String[] splittedStringArray = inputString.split(";");
@@ -17,7 +17,7 @@ public class InputNumbersOfKeyboard {
         for (int i = 0; i < splittedStringArray.length; i++)
             arraysNumber[i] = Integer.valueOf(splittedStringArray[i]);
 
-        System.out.print("\n" + " Entered array is " + Arrays.toString(arraysNumber).replace(",", ";") +
+        System.out.print("\n" + " Entered arrays is " + Arrays.toString(arraysNumber).replace(",", ";") +
                 " \n ===================================== \n");
         return arraysNumber;
     }

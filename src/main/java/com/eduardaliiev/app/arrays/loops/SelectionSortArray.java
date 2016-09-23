@@ -6,7 +6,7 @@ public class SelectionSortArray {
 
     public static void calculateLoopNumbers() {
         int[] arraysNumber = {62, 84, 32, 5, 7, 14, 17, 55, 2, 13, 100};
-        System.out.print("\n" + "Original array:" + Arrays.toString(arraysNumber) +
+        System.out.print("\n" + "Original arrays:" + Arrays.toString(arraysNumber) +
                 " \n ======================================================= \n");
         for (int i = 0; i < arraysNumber.length; i++) {
             int tempNumber = i;

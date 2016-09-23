@@ -12,7 +12,7 @@ public class ArrayOfRandomIntegerNumbersFrom0To9 {
             System.out.print(arraysNumber[i] + " ");
             if (arraysNumber[i] >= 0 && arraysNumber[i] % 2 == 0) evenNumbers++;
         }
-        System.out.println("\n" + "There is " + evenNumbers + " even numbers in array!");
+        System.out.println("\n" + "There is " + evenNumbers + " even numbers in arrays!");
     }
 }
 

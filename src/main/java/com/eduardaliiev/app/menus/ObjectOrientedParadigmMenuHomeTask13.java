@@ -18,7 +18,7 @@ public class ObjectOrientedParadigmMenuHomeTask13 {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Use of a method \'Overloaded\'" +
-                        "\n 2 - Random array parametrized" +
+                        "\n 2 - Random arrays parametrized" +
                         "\n 3 - Bicycle -> CustomBicycle -> BicycleWithRing\n" +
                         "\n 0 - Exit");
                 try {
@@ -38,7 +38,7 @@ public class ObjectOrientedParadigmMenuHomeTask13 {
                             RandomArrayCreator.overloadedCreate();
                             break;
                         case SECOND:
-                            System.out.println("Random array parametrized");
+                            System.out.println("Random arrays parametrized");
                             // RandomArrayParametrized randomArrayParametrized = new RandomArrayParametrized();
                             RandomArrayCreator.overloadedCreate();
                             break;

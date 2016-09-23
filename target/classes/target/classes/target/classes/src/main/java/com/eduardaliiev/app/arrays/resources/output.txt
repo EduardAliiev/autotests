@@ -1,0 +1,16 @@
+610 - not a Palindrome :(
+34 - not a Palindrome :(
+13 - not a Palindrome :(
+3 - it's a Palindrome!
+21 - not a Palindrome :(
+144 - not a Palindrome :(
+2 - it's a Palindrome!
+377 - not a Palindrome :(
+1 - it's a Palindrome!
+55 - it's a Palindrome!
+8 - it's a Palindrome!
+233 - not a Palindrome :(
+5 - it's a Palindrome!
+89 - not a Palindrome :(
+987 - not a Palindrome :(
+1 - it's a Palindrome!

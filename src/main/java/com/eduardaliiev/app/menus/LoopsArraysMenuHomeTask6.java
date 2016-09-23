@@ -19,8 +19,8 @@ public class LoopsArraysMenuHomeTask6 {
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
                         "\n 1 - Bubble sotr from smaller to bigger and from bigger to smaller" +
-                        "\n 2 - Sort array by 'Selection sort'" +
-                        "\n 3 - The two-dimensional array with a maximum output of a random number from -99 to 99\n" +
+                        "\n 2 - Sort arrays by 'Selection sort'" +
+                        "\n 3 - The two-dimensional arrays with a maximum output of a random number from -99 to 99\n" +
                         "\n 0 - Exit");
                 try {
                     String numberOfChoice = String.valueOf(scanner.nextInt());
@@ -39,11 +39,11 @@ public class LoopsArraysMenuHomeTask6 {
                             BubbleSort.calculateLoopBubbleSort();
                             break;
                         case SECOND:
-                            System.out.println("Starting program: " + "Sort array by 'Selection sort'");
+                            System.out.println("Starting program: " + "Sort arrays by 'Selection sort'");
                             SelectionSortArray.calculateLoopNumbers();
                             break;
                         case THIRD:
-                            System.out.println("Starting program: " + "The two-dimensional array with a maximum output of a random number from -99 to 99");
+                            System.out.println("Starting program: " + "The two-dimensional arrays with a maximum output of a random number from -99 to 99");
                             TwoArrayOfRandomNumberWithMaxNumberFromMinus99To99.calculateLoopNumbers();
                             break;
                         case SKIP:

@@ -17,7 +17,7 @@ public class GenericsMenuHomeTask16 {
                 selectedValue = EnumNumbersOfMenus.SKIP;
                 System.out.println("\n Welcome! Select one of the four programs is necessary to " +
                         "make next choice and Press Enter: \n" +
-                        "\n 1 - ArraiSorterGeneriss is sorts an array type, which extends Numbers" +
+                        "\n 1 - ArraiSorterGeneriss is sorts an arrays type, which extends Numbers" +
                         "\n 2 - Reads a set of words from and after is entered the word-marker outputs the result\n" +
                         "\n 0 - Exit");
                 try {
@@ -33,7 +33,7 @@ public class GenericsMenuHomeTask16 {
                             System.out.println("Starting program: " + "Exit");
                             break labelOfExit;
                         case FIRST:
-                            System.out.println("Starting program: " + "ArraiSorterGeneriss is sorts an array type, which extends Numbers");
+                            System.out.println("Starting program: " + "ArraiSorterGeneriss is sorts an arrays type, which extends Numbers");
                             ArraySorterGenerics.genericsCreate();
                             break;
                         case SECOND:
