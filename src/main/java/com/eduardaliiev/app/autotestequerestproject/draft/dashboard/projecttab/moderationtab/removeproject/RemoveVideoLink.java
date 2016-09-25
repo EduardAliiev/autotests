@@ -1,25 +1,24 @@
-package com.eduardaliiev.app.autotestequerestproject.draft.uploadproject;
+package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.uploadproject;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.LocalFileDetector;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Eduard Aliiev on 9/18/16;
  */
-public class UploadBackgroundInProject {
+
+public class UploadVideoInProject {
     FirefoxDriver driver;
     String baseUrl = "https://dev.autotestequerestproject.com/";
     //ввод данных пользователя, вспомогательные данные
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";
-    private final static String UPLOADBACKGROUND = "com/eduardaliiev/app/methods/arrays/autotestequerestproject/resources/background.jpg";
+    private final static String UPLOADVIDEO = "https://www.youtube.com/watch?v=QH2-TGUlwu4";
     //входим в аккаунд
     private final By emailField = By.id("email");
     private final By passwordField = By.id("password");
@@ -30,15 +29,14 @@ public class UploadBackgroundInProject {
     private final By projectSearchField = By.xpath("//*[@id='wrapper']/main/div/div/div/div[2]/div/div[2]/div[1]/div[2]/label/../*[@id='searchModerate']");
     //"Редактировать" найденны проект
     private final By projectEditButton = By.xpath("//*[@id='wrapper']/main/div/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[3]//*[text()[contains(.,'Редактировать')]]");
-    //добавление заднего фона проекта
-    private final By backgroundImageButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[2]/div/..//*[@id='file']");
-
-    //private final By uploadBackgroundImage = By.id("UPLOADBACKGROUND");
-
-    //информативное сообщение о "Проект сохранен" и "Файл загружен"
+    //добавляем ссылку на "Видео" -> "Применить"
+    private final By editUploadVideoButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[1]/div[3]//*[@class='edit-btn']");
+    private final By pasteVideoLinksField = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[1]/div[3]/div/div/label/../*[@id='yt_link']");
+    private final By applyVideoLinksButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[1]/div[3]/div/div/label/../*[text()[contains(.,'Применить')]]");
+    //информативное сообщение о "Проект сохранен"
     private final By projectSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Проект сохранен')]]");
-    private final By backgroundFileSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Файл загружен')]]");
-
+    //воспроизведение видео
+    private final By videoButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[1]/div[3]//*[text()[contains(.,'Видео')]]");
 
     @Before
     public void setUp() throws Exception {
@@ -61,18 +59,14 @@ public class UploadBackgroundInProject {
         driver.findElement(projectSearchField).sendKeys("Интернет киоски \"Инетик\".");
         //"Редактировать" найденны проект
         driver.findElement(projectEditButton).click();
-        //добавление заднего фона проекта
-        driver.findElement(backgroundImageButton).click();
-
-
-        driver.setFileDetector(new LocalFileDetector());
-        WebElement upload = driver.findElement(By.id("file"));
-        upload.sendKeys("UPLOADBACKGROUND");
-
-
-        //информативное сообщение о "Проект сохранен" и "Файл загружен"
+        //добавляем ссылку на "Видео" -> "Применить"
+        driver.findElement(editUploadVideoButton).click();
+        driver.findElement(pasteVideoLinksField).sendKeys(UPLOADVIDEO);
+        driver.findElement(applyVideoLinksButton).click();
+        //информативное сообщение о "Проект сохранен"
         driver.findElement(projectSaveMassage).isDisplayed();
-        driver.findElement(backgroundFileSaveMassage).isDisplayed();
+        //воспроизведение видео
+        driver.findElement(videoButton).click();
     }
 
     @After

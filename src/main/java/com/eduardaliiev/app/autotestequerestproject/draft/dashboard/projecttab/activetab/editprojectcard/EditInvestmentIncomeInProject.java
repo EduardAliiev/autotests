@@ -1,4 +1,4 @@
-package com.eduardaliiev.app.autotestequerestproject.draft.editproject;
+package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.activetab.editprojectcard;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,6 +34,7 @@ public class EditInvestmentIncomeInProject {
     /*private final By quickEditorSecondField = By.xpath("/*//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]/div[2]/label/..*//*[@id='roi2']")*/;
     private final By quickEditorSecondField = By.cssSelector("#roi2");
     private final By quickEditorSaveButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[2]/div[7]/div/div[3]//*[text()[contains(.,'Применить')]]");
+
     //информативное сообщение о "Проект сохранен"
     private final By projectSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Проект сохранен')]]");
 

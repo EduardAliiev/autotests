@@ -1,4 +1,4 @@
-package com.eduardaliiev.app.autotestequerestproject.draft.editproject;
+package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.editprojectcard;
 
 import org.junit.After;
 import org.junit.Before;
