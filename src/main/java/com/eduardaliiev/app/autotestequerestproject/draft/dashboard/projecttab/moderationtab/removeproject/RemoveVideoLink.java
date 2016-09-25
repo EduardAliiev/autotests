@@ -18,6 +18,10 @@ public class RemoveVideoLink {
     //ввод данных пользователя, вспомогательные данные
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";
+
+
+
+
     //входим в аккаунд
     private final By emailField = By.id("email");
     private final By passwordField = By.id("password");
