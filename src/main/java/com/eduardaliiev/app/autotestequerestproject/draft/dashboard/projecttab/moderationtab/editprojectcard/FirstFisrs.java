@@ -25,7 +25,7 @@ public class FirstFisrs {
 
         @Test
         public void FirstFisrs() {
-            wd.get("https://dev.autotestequerestproject.com/register/index");
+            wd.get("https://dev.equerest.com/register/index");
             wd.findElement(By.id("email")).click();
             wd.findElement(By.id("email")).clear();
             wd.findElement(By.id("email")).sendKeys("olegftzi@gmail.com");

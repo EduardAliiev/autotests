@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class EditProjectOnDashboard {
     FirefoxDriver driver;
-    String baseUrl = "https://dev.autotestequerestproject.com/";
+    String baseUrl = "https://dev.equerest.com/";
 
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";

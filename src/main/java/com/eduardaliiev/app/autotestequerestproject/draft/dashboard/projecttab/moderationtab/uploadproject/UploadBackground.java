@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class UploadBackground {
     FirefoxDriver driver;
-    String baseUrl = "https://dev.autotestequerestproject.com/";
+    String baseUrl = "https://dev.equerest.com/";
     //ввод данных пользователя, вспомогательные данные
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";

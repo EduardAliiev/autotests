@@ -1,4 +1,4 @@
-package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.uploadproject;
+package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.removeproject;
 
 import org.junit.After;
 import org.junit.Before;
@@ -12,13 +12,12 @@ import java.util.concurrent.TimeUnit;
  * Created by Eduard Aliiev on 9/18/16;
  */
 
-public class UploadVideoInProject {
+public class RemoveVideoLink {
     FirefoxDriver driver;
-    String baseUrl = "https://dev.autotestequerestproject.com/";
+    String baseUrl = "https://dev.equerest.com/";
     //ввод данных пользователя, вспомогательные данные
     private final static String LOGIN = "olegftzi@gmail.com";
     private final static String PASSWORD = "Oleg1234";
-    private final static String UPLOADVIDEO = "https://www.youtube.com/watch?v=QH2-TGUlwu4";
     //входим в аккаунд
     private final By emailField = By.id("email");
     private final By passwordField = By.id("password");
@@ -59,9 +58,9 @@ public class UploadVideoInProject {
         driver.findElement(projectSearchField).sendKeys("Интернет киоски \"Инетик\".");
         //"Редактировать" найденны проект
         driver.findElement(projectEditButton).click();
-        //добавляем ссылку на "Видео" -> "Применить"
+        //удаляем ссылку на "Видео" -> "Применить"
         driver.findElement(editUploadVideoButton).click();
-        driver.findElement(pasteVideoLinksField).sendKeys(UPLOADVIDEO);
+        driver.findElement(pasteVideoLinksField).clear();
         driver.findElement(applyVideoLinksButton).click();
         //информативное сообщение о "Проект сохранен"
         driver.findElement(projectSaveMassage).isDisplayed();
