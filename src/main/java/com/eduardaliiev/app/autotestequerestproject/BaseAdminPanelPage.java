@@ -1,6 +1,5 @@
-package com.equerest.pages.adminpanel;
+package com.eduardaliiev.app.autotestequerestproject;
 
-import com.equerest.pages.AbstractPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,8 +14,8 @@ public class BaseAdminPanelPage extends AbstractPage {
         super(driver);
     }
 
-    public ProjectsPage navigateToProjectPageViaMenuItem(){
+    public ProjectPage navigateToProjectPageViaMenuItem(){
         driver.findElement(projectsMenuItem).click();
-        return new ProjectsPage(driver);
+        return new ProjectPage(driver);
     }
 }
