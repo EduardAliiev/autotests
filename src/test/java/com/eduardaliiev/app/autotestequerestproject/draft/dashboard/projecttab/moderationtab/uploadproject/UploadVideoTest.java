@@ -4,6 +4,6 @@ package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.
  * Created by Eduard Aliiev on 9/18/16;
  */
 
-public class UploadVideo {
+public class UploadVideoTest {
 
 }
