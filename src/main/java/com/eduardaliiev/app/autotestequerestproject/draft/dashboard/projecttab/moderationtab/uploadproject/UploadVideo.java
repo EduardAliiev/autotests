@@ -1,6 +1,7 @@
 package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.uploadproject;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -38,6 +39,11 @@ public class UploadVideo {
     //воспроизведение видео
     private final By videoButton = By.xpath("//*[@id='wrapper']/main/div/div/div/section[1]/div[2]/div/div[3]/div/div[1]/div[3]//*[text()[contains(.,'Видео')]]");
 
+    /*public UploadVideo assertVideoLinkDescriptionText(String status) {
+        Assert.assertTrue(driver.findElement(pasteVideoLinksField).getText().contains(status));
+        return this;
+    }*/
+
     @Before
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
@@ -67,6 +73,9 @@ public class UploadVideo {
         driver.findElement(projectSaveMassage).isDisplayed();
         //воспроизведение видео
         driver.findElement(videoButton).click();
+
+        //верификация
+        Assert.assertEquals(UPLOADVIDEO,UPLOADVIDEO);
     }
 
     @After
