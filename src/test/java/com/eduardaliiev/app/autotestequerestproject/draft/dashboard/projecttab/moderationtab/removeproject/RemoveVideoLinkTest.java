@@ -2,7 +2,7 @@ package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.
 
 
 import com.eduardaliiev.app.autotestequerestproject.BaseTest;
-import com.eduardaliiev.app.autotestequerestproject.ProjectPage;
+import com.eduardaliiev.app.autotestequerestproject.ProjectModerationPage;
 import com.eduardaliiev.app.autotestequerestproject.common.MainPage;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
@@ -17,11 +17,11 @@ public class RemoveVideoLinkTest extends BaseTest {
 
     private RemoveVideoLink deleteVideoLinkOnPage(String login, String password, String projectName) {
         MainPage mainPage = new MainPage("https://dev.equerest.com/", driver);
-        ProjectPage projectPage = mainPage.openLoginPage()
-                .loginAs(login, password);
+        ProjectModerationPage projectModerationPage = mainPage.openLoginPage()
+                .loginModerationAs(login, password);
 
 //передаем нажатие на [Проект] -> "Модерация" ищем проект
-        return projectPage.navigateToProjectPageViaMenuItem()
+        return projectModerationPage.navigateModerationToProjectPageViaMenuItem()
                 .searchProjectByName(projectName);
     }
 

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Eduard Aliiev on 9/26/16;
  */
-public class ProjectPage extends BaseAdminPanelPage{
+public class ProjectModerationPage extends BaseAdminPanelPage{
 
     /*####################_МОДЕРАЦИЯ_####################*/
     //в разделе "Проекты" -> "Модерация" ищем проект
@@ -17,7 +17,7 @@ public class ProjectPage extends BaseAdminPanelPage{
     //"Редактировать" найденны проект
     private final By projectEditButton = By.xpath("//*[@id='wrapper']/main/div/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[3]//*[text()[contains(.,'Редактировать')]]");
 
-    public ProjectPage(WebDriver driver) {
+    public ProjectModerationPage(WebDriver driver) {
         super(driver);
     }
 

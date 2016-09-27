@@ -2,7 +2,7 @@ package com.eduardaliiev.app.autotestequerestproject.common;
 
 import com.eduardaliiev.app.autotestequerestproject.AbstractPage;
 import com.eduardaliiev.app.autotestequerestproject.ProjectActivePage;
-import com.eduardaliiev.app.autotestequerestproject.ProjectPage;
+import com.eduardaliiev.app.autotestequerestproject.ProjectModerationPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -21,11 +21,11 @@ public class LoginPage extends AbstractPage {
         super(driver);
     }
 
-    public ProjectPage loginAs(String userName, String password) {
+    public ProjectModerationPage loginModerationAs(String userName, String password) {
         driver.findElement(emailField).sendKeys(userName);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
-        return new ProjectPage(driver);
+        return new ProjectModerationPage(driver);
     }
     public ProjectActivePage loginActiveAs(String userName, String password) {
         driver.findElement(emailField).sendKeys(userName);
