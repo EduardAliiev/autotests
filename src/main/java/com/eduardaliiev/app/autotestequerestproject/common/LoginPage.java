@@ -5,6 +5,8 @@ import com.eduardaliiev.app.autotestequerestproject.ProjectPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+;
+
 /**
  * Created by Eduard Aliiev on 9/25/16;
  */
