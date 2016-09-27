@@ -1,5 +1,6 @@
 package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.removeproject;
 
+
 import com.eduardaliiev.app.autotestequerestproject.BaseTest;
 import com.eduardaliiev.app.autotestequerestproject.ProjectPage;
 import com.eduardaliiev.app.autotestequerestproject.common.MainPage;
@@ -31,6 +32,8 @@ public class RemoveVideoLinkTest extends BaseTest {
         RemoveVideoLink selectedProject = deleteVideoLinkOnPage(login, password, projectName);
 
         //вызов класса: RemoveVideoLink
-        selectedProject.deleteVideoLink();
+        selectedProject.deleteVideoLink()
+                //верификация пустого поля
+                .assertDeleteVideoLinkFild();
     }
 }

@@ -2,6 +2,7 @@ package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.
 
 
 import com.eduardaliiev.app.autotestequerestproject.ProjectPage;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -32,6 +33,11 @@ public class RemoveVideoLink extends ProjectPage {
         driver.findElement(projectSaveMassage).isDisplayed();
 
         return new RemoveVideoLink(driver);
+    }
+    //верификация пустого поля
+    public RemoveVideoLink assertDeleteVideoLinkFild() {
+        Assert.assertTrue(driver.findElement(deleteVideoLinksInField).getText().contains(""));
+        return this;
     }
 
 }
