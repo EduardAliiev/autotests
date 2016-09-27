@@ -19,4 +19,8 @@ public class BaseAdminPanelPage extends AbstractPage {
         driver.findElement(projectsMenuItem).click();
         return new ProjectPage(driver);
     }
+    public ProjectActivePage navigateToActiveProjectPageViaMenuItem(){
+        driver.findElement(projectsMenuItem).click();
+        return new ProjectActivePage(driver);
+    }
 }
