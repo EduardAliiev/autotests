@@ -32,7 +32,7 @@ public class UploadImagesToGallery {
     //"Редактировать" найденны проект
     private final By projectEditButton = By.xpath("//*[@id='wrapper']/main/div/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[3]//*[text()[contains(.,'Редактировать')]]");
     //"Загрузить изображения"
-    //WebElement upload = driver.findElement(By.xpath("//*[@id='anchor-gallery']//*[text()[contains(.,'Загрузить изображения']"));
+    //WebElement upload = driver.findElement(By.xpath("//*[@id='anchor-gallery']//*[text()[contains(.,'Загрузить изображения']]"));
 
 
     //private final By galleryImageButton = By.xpath("//*[@id='anchor-gallery']//*[text()[contains(.,'Загрузить изображения']");

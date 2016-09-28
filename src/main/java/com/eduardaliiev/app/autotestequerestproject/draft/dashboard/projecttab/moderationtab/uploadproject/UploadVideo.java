@@ -73,9 +73,11 @@ public class UploadVideo {
         driver.findElement(projectSaveMassage).isDisplayed();
         //воспроизведение видео
         driver.findElement(videoButton).click();
+        driver.close();
 
         //верификация
         Assert.assertEquals(UPLOADVIDEO,UPLOADVIDEO);
+
     }
 
     @After
