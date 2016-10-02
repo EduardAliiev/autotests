@@ -1,8 +1,10 @@
 package com.eduardaliiev.app.autotestdraft;
 
 import org.junit.Assert;
-import org.junit.Test;
-import ru.yandex.qatools.allure.annotations.*;
+import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 /**
  * Created by Eduard Aliiev on 9/29/16;
@@ -17,19 +19,28 @@ public class SimpleTest {
     //@Stories({"Стори 1"," и вот Стори 2"})
     @Test
         public void firstSimpleTest() {
-            Assert.assertTrue() {
-            checkResult(getDivisionresult(4,2), 2);
-            }
+            checkResult(getDivisionResult(4,2), 2);
+            
         }
-
-
-    @Step("{0}")
-    private void log (String sdsd);
-    @Step ("Получение {0} na {1}")
-    private void getDivisionresult(int i, int i1) {
+    @Step("Проверка полученного результата")
+    private void checkResult(int actualResult, int expectedResult){
+        Assert.assertTrue("Actual result (" + actualResult + ") not equals to expected(" + expectedResult + ")", actualResult == expectedResult);
     }
-    @Step("dsfsdfsdfsd")
-    private void checkResult(void divisionresult, int i) {
+        
+    @Step("{0}")
+    private void log(String sdsd) {
+    }
+
+    @Step ("Получение результата {0} na {1}")
+    private int getDivisionResult(int firstInt, int secondInt) {
+        checkNotZiro(secondInt);
+        return firstInt / secondInt;
+    }
+
+    @Step("Проверка деления")
+    private void checkNotZiro(int intValue) {
+        log("Значения делителя: " + intValue);
+        Assert.assertTrue("Делитель равен: ", intValue !=0);
     }
 }
 
