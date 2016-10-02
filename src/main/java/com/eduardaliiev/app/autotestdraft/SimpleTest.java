@@ -1,4 +1,4 @@
-package com.equerest.tests.webdriver.adminpanel.projectpage.moderatesection;
+package com.eduardaliiev.app.autotestdraft;
 
 import org.junit.Assert;
 import org.junit.Test;
