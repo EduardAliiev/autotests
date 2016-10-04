@@ -1,7 +1,7 @@
 package com.eduardaliiev.app.autotestdraft;
 
 import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;

@@ -24,7 +24,7 @@ public class BaseTest {
     @Before
     public void setUp() {
 
-        //mvn clean test -Dbrowser="Chrome"
+        //mvn clean test -Dbrowser=сhrome
 
         if ( BROWSER == null || BROWSER.equalsIgnoreCase("Firefox") || BROWSER.equalsIgnoreCase("")) {
             this.driver = new FirefoxDriver();

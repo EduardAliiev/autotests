@@ -1,9 +1,9 @@
 package com.eduardaliiev.app.autotestdraft;
 
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
 /**
  * Created by Eduard Aliiev on 9/22/16;
