@@ -1,4 +1,4 @@
-package com.eduardaliiev.app.autotestequerestproject.steps;
+package com.eduardaliiev.app.autotestequerestproject.bdd_cucumber.steps;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

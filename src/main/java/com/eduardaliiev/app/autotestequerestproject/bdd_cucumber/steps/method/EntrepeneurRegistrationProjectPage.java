@@ -1,6 +1,6 @@
-package com.eduardaliiev.app.autotestequerestproject.steps.method;
+package com.eduardaliiev.app.autotestequerestproject.bdd_cucumber.steps.method;
 
-import com.eduardaliiev.app.autotestequerestproject.steps.DriverFactory;
+import com.eduardaliiev.app.autotestequerestproject.bdd_cucumber.steps.DriverFactory;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
