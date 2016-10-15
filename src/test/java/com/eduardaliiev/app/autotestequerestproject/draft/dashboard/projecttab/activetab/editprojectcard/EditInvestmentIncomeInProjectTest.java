@@ -19,7 +19,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 
 @RunWith(JUnitParamsRunner.class)
-public class EditInvestmentIncomeInProjectTest extends BaseTest{
+public class EditInvestmentIncomeInProjectTest extends BaseTest {
 
     @Title("dgfdg")
     @Description("dfjkhgskdf vksdnfvkejrgnvjdfnv")

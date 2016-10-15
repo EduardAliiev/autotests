@@ -19,7 +19,7 @@ public class RemoveVideoLink extends ProjectModerationPage {
     protected final By projectSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Проект сохранен')]]");
 
 
-    public RemoveVideoLink(WebDriver driver) {
+    public RemoveVideoLink(WebDriver driver, ProjectModerationPage projectModerationPage) {
         super(driver);
     }
 
@@ -32,7 +32,7 @@ public class RemoveVideoLink extends ProjectModerationPage {
         //информативное сообщение о "Проект сохранен"
         driver.findElement(projectSaveMassage).isDisplayed();
 
-        return new RemoveVideoLink(driver);
+        return new RemoveVideoLink(driver, this);
     }
     //верификация пустого поля
     public RemoveVideoLink assertDeleteVideoLinkFild() {

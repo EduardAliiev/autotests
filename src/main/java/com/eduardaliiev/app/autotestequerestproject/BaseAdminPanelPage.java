@@ -1,6 +1,5 @@
 package com.eduardaliiev.app.autotestequerestproject;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

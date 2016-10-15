@@ -1,6 +1,5 @@
 package com.eduardaliiev.app.autotestequerestproject;
 
-
 import com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.moderationtab.removeproject.RemoveVideoLink;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Eduard Aliiev on 9/26/16;
  */
-public class ProjectModerationPage extends BaseAdminPanelPage{
+public class ProjectModerationPage extends BaseAdminPanelPage {
 
     /*####################_МОДЕРАЦИЯ_####################*/
     //в разделе "Проекты" -> "Модерация" ищем проект
@@ -25,7 +24,7 @@ public class ProjectModerationPage extends BaseAdminPanelPage{
     public RemoveVideoLink videoLink(){
         //"Редактировать" найденный проект
         driver.findElement(projectEditButton).click();
-        return new RemoveVideoLink(driver);
+        return new RemoveVideoLink(driver, this);
     }
 
     public RemoveVideoLink searchProjectByName (String projectName){

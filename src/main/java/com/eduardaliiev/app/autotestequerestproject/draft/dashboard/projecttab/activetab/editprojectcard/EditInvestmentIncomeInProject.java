@@ -21,7 +21,7 @@ public class EditInvestmentIncomeInProject extends ProjectActivePage {
     //информативное сообщение о "Проект сохранен"
     private final By projectSaveMassage = By.xpath("//*[@id='toast-container']//*[text()[contains(.,'Проект сохранен')]]");
 
-    public EditInvestmentIncomeInProject(WebDriver driver) {
+    public EditInvestmentIncomeInProject(WebDriver driver, ProjectActivePage projectActivePage) {
         super(driver);
     }
 
@@ -43,6 +43,6 @@ public class EditInvestmentIncomeInProject extends ProjectActivePage {
         driver.findElement(projectSaveMassage).isDisplayed();
         Assert.assertEquals(quickEditorFirstField,quickEditorFirstField);
         Assert.assertEquals(quickEditorSecondField,quickEditorSecondField);
-        return new EditInvestmentIncomeInProject(driver);
+        return new EditInvestmentIncomeInProject(driver, this);
     }
 }

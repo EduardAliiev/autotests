@@ -1,6 +1,5 @@
 package com.eduardaliiev.app.autotestequerestproject;
 
-
 import com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.activetab.editprojectcard.EditInvestmentIncomeInProject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Eduard Aliiev on 9/26/16;
  */
-public class ProjectActivePage extends BaseAdminPanelPage{
+public class ProjectActivePage extends BaseAdminPanelPage {
 
     /*####################_Активные_####################*/
     //в разделе "Проекты" -> "Активные" ищем проект
@@ -26,7 +25,7 @@ public class ProjectActivePage extends BaseAdminPanelPage{
     public EditInvestmentIncomeInProject investmentIncomeValue(){
         //"Инвестиционный доход" в проект
         driver.findElement(projectEditButton).click();
-        return new EditInvestmentIncomeInProject(driver);
+        return new EditInvestmentIncomeInProject(driver, this);
     }
 
     public EditInvestmentIncomeInProject searchActiveProjectByName (String projectName){
