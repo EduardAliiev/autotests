@@ -1,6 +1,7 @@
 package com.eduardaliiev.app.autotestequerestproject.draft.dashboard.projecttab.homepage;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -33,21 +34,40 @@ public class TheElementsHeaderMenuAreCheckedClickability {
 
     @Test
     public void clickabilityElementsHeaderMenu() {
-        //clickability equerestLogo
+        //clickability 'Mission' button
         driver.findElement(missionButton).click();
+        Assert.assertTrue(driver.findElement(missionButton).isEnabled());
         driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(equerestLogo).isEnabled());
 
+
+        //clickability 'Entrepreneur' button
         driver.findElement(entrepreneurButton).click();
+        Assert.assertTrue(driver.findElement(entrepreneurButton).isEnabled());
         driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(equerestLogo).isEnabled());
 
+
+        //clickability 'Investor' button
         driver.findElement(investorButton).click();
+        Assert.assertTrue(driver.findElement(investorButton).isEnabled());
         driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(equerestLogo).isEnabled());
 
+
+        //clickability 'Projects' button
         driver.findElement(projectsButton).click();
+        Assert.assertTrue(driver.findElement(projectsButton).isEnabled());
         driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(equerestLogo).isEnabled());
 
+
+        //clickability 'Enter' button
         driver.findElement(enterButton).click();
+        Assert.assertTrue(driver.findElement(enterButton).isEnabled());
         driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(equerestLogo).isEnabled());
+
     }
 
     @After
