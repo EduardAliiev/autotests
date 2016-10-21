@@ -12,16 +12,15 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Eduard Aliiev on 10/15/16;
  */
-public class TheElementsHeaderMenuAreCheckedClickability {
+public class PostProjectAndHowWeAreWorkingAreCheckedClickability {
     FirefoxDriver driver;
     String baseUrl = "https://dev.equerest.com/";
     //The Elements "Header" Menu
     private final By equerestLogo = By.xpath("/html/body/div[1]/header/div/nav/div[1]/div[1]//img[contains(@src, 'header_logo.svg')]");
-    private final By missionButton = By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Миссия')]]");
-    private final By entrepreneurButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Предпринимателю')]]");
-    private final By investorButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Инвестору')]]");
-    private final By projectsButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Проекты')]]");
-    private final By enterButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Войти')]]");
+    private final By PostProjectButton = By.xpath("//*[@id='banner']//a[text()[contains(.,'Подать проект')]]");
+    private final By HowWeAreWorkingButton = By.xpath(".//*[@id='banner']//a[text()[contains(.,'Как мы работаем?')]]");
+
+
 
     @Before
     public void setUp() throws Exception {
@@ -29,44 +28,21 @@ public class TheElementsHeaderMenuAreCheckedClickability {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        driver.get(baseUrl + "register#/");
+        driver.get(baseUrl);
     }
 
     @Test
     public void clickabilityElementsHeaderMenu() {
-        //clickability 'Mission' button
-        driver.findElement(missionButton).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='mission']//h1[text()[contains(.,'Миссия Equerest')]]")).isEnabled());
+        //clickability 'Post project' button
+        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
+        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h3[class='h3']")).isEnabled());
+        driver.findElement(PostProjectButton).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='entrepreneur-register-form']//h1[text()[contains(.,'Регистрация вашего бизнес-проекта')]]")).isEnabled());
         driver.findElement(equerestLogo).click();
         Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
-
-
-        //clickability 'Entrepreneur' button
-        driver.findElement(entrepreneurButton).click();
+        //clickability 'How we are working' button
+        driver.findElement(HowWeAreWorkingButton).click();
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='banner']//h1[text()[contains(.,'Найдем инвестора для вашего бизнеса')]]")).isEnabled());
-        driver.findElement(equerestLogo).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
-
-
-        //clickability 'Investor' button
-        driver.findElement(investorButton).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='banner']//h1[text()[contains(.,'Инвестируйте в перспективные проекты')]]")).isEnabled());
-        driver.findElement(equerestLogo).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
-
-
-        //clickability 'Projects' button
-        driver.findElement(projectsButton).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='catalog']//h1[text()[contains(.,'Проекты')]]")).isEnabled());
-        driver.findElement(equerestLogo).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
-
-
-        //clickability 'Enter' button
-        driver.findElement(enterButton).click();
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='login-block']//h3[text()[contains(.,'Войти')]]")).isEnabled());
-        driver.findElement(equerestLogo).click();
-        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
 
     }
 
