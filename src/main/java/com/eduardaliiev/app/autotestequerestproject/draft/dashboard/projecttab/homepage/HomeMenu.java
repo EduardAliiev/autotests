@@ -77,17 +77,23 @@ public class HomeMenu {
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='complete']//*[text()[contains(.,'Успешные проекты')]]")).isEnabled());
         driver.findElement(moreSuccessfulProjectsButton).click();
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='catalog']//h1[text()[contains(.,'Проекты')]]")).isEnabled());
+        driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
 
         //Миссия Equerest
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='main']//*[text()[contains(.,'Мы убеждены, что за бизнесом должно стоять желание помогать людям')]]")).isEnabled());
         driver.findElement(missionEquerestButton).click();
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='mission']//h1[text()[contains(.,'Миссия Equerest')]]")).isEnabled());
+        driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
 
 
         //Новые проекты
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='new_projects']//*[text()[contains(.,'Новые проекты')]]")).isEnabled());
         driver.findElement(moreNewProjectsButton).click();
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id='catalog']//h1[text()[contains(.,'Проекты')]]")).isEnabled());
+        driver.findElement(equerestLogo).click();
+        Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
 
     }
     @After
