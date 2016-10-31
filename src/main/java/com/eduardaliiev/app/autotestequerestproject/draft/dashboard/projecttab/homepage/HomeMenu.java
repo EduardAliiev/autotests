@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Eduard Aliiev on 10/15/16;
  */
-public class TheElementsHeaderMenuAreCheckedClickability {
+public class HomeMenu {
     FirefoxDriver driver;
     String baseUrl = "https://dev.equerest.com/";
     //The Elements "Header" Menu
@@ -22,6 +22,10 @@ public class TheElementsHeaderMenuAreCheckedClickability {
     private final By investorButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Инвестору')]]");
     private final By projectsButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Проекты')]]");
     private final By enterButton =By.xpath("/html/body/div[1]/header//*[text()[contains(.,'Войти')]]");
+    //private final By successfulProjects = By.xpath("//*[@id='complete']//*[text()[contains(.,'Успешные проекты')]]");
+    private final By moreSuccessfulProjectsButton = By.xpath("//*[@id='complete']//*[text()[contains(.,'Больше успешных проектов')]]");
+    private final By missionEquerestButton = By.xpath("//*[@id='main']//*[text()[contains(.,'Миссия Equerest')]]");
+    private final By moreNewProjectsButton = By.xpath("//*[@id='new_projects']//*[text()[contains(.,'Больше новых проектов')]]");
 
     @Before
     public void setUp() throws Exception {
@@ -68,8 +72,24 @@ public class TheElementsHeaderMenuAreCheckedClickability {
         driver.findElement(equerestLogo).click();
         Assert.assertTrue(driver.findElement(By.cssSelector("#banner .h1[class='h1']")).isEnabled());
 
-    }
 
+        //Успешные проекты
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='complete']//*[text()[contains(.,'Успешные проекты')]]")).isEnabled());
+        driver.findElement(moreSuccessfulProjectsButton).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='catalog']//h1[text()[contains(.,'Проекты')]]")).isEnabled());
+
+        //Миссия Equerest
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='main']//*[text()[contains(.,'Мы убеждены, что за бизнесом должно стоять желание помогать людям')]]")).isEnabled());
+        driver.findElement(missionEquerestButton).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='mission']//h1[text()[contains(.,'Миссия Equerest')]]")).isEnabled());
+
+
+        //Новые проекты
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='new_projects']//*[text()[contains(.,'Новые проекты')]]")).isEnabled());
+        driver.findElement(moreNewProjectsButton).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='catalog']//h1[text()[contains(.,'Проекты')]]")).isEnabled());
+
+    }
     @After
     public void tearDown() {
         driver.quit();
