@@ -41,6 +41,7 @@ Thumbs.db
 /out/
 /.idea/
 /target/
+/video/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
