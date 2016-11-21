@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class GoogleSRPageTest {
     @Test
-    public void searchForQ() throws InterruptedException {
+    public void searchForQ()  throws InterruptedException  {
         WebDriver driver = new FirefoxDriver();
 
         driver.get("http://www.google.com/");

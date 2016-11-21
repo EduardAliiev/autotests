@@ -18,7 +18,6 @@ import java.util.concurrent.TimeUnit;
  * Created by Eduard Aliiev on 9/25/16;
  */
 public class BaseTest {
-
     protected WebDriver driver;
     private String BROWSER = System.getProperty("browser");
     private static String OS = System.getProperty("os.name").toLowerCase();
